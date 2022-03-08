@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+
+  <title>Aguaria</title>
+  <meta content="" name="description">
+  <meta content="" name="keywords">
+
+  
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
+
+
+  <link href="<?= base_url() ?>fffffront/assets/vendor/animate.css/animate.min.css" rel="stylesheet">
+  <link href="<?= base_url() ?>fffffront/assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="<?= base_url() ?>fffffront/assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link href="<?= base_url() ?>fffffront/assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
+  <link href="<?= base_url() ?>fffffront/assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+  <link href="<?= base_url() ?>fffffront/assets/vendor/remixicon/remixicon.css" rel="stylesheet">
+  <link href="<?= base_url() ?>fffffront/assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+
+
+ 
+  <link href="<?= base_url() ?>fffffront/assets/css/style.css" rel="stylesheet">
+  <link href="<?= base_url() ?>fffffront/assets/css/carousel.css" rel="stylesheet">
+  <link href="https://netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.css" rel="stylesheet">
+  <link href="<?= base_url() ?>fffffront/assets/faq/faq.css" rel="stylesheet">
+  <link href="<?= base_url() ?>fffffront/assets/css/animate.css" rel="stylesheet">
+
+  <link href="<?= base_url() ?>fffffront/assets/fonts/dancing_script/stylesheet.css" rel="stylesheet">
+
+</head>
+
+<body>
+
+  
+  <header id="header" class="fixed-top d-flex align-items-center">
+    <div class="container d-flex align-items-center">
+
+      <div class="logo me-auto"><a href="<?= base_url() ?>" ><img src="<?= base_url(); ?>images/AGUARIA.png" width="100px" /></a></div>
+
+  
+      <nav id="navbar" class="navbar">
+        <ul>
+          <li><a <?= $this->uri->segment(1) == '' ? 'class="active"' : '' ?> href="<?= base_url(); ?>">HOME</a></li>
+
+          <li class="dropdown"><a <?= $this->uri->segment(1) == 'home' && $this->uri->segment(2) == 'sejarah' || $this->uri->segment(2) == 'visimisi' || $this->uri->segment(2) == 'artilogo' ? 'class="active"' : '' ?> href="#"><span>PERUSAHAAN</span> <i class="bi bi-chevron-down"></i></a>
+            <ul>
+              <li><a <?= $this->uri->segment(2) == 'sejarah' ? 'class="active"' : '' ?> href="<?= base_url("home/sejarah"); ?>">SEJARAH</a></li>
+              <li><a <?= $this->uri->segment(2) == 'visimisi' ? 'class="active"' : '' ?>href="<?= base_url("home/visimisi"); ?>">VISI & MISI</a></li>
+              <li><a <?= $this->uri->segment(2) == 'artilogo' ? 'class="active"' : '' ?>href="<?= base_url("home/tentang"); ?>">TENTANG AGUARIA</a></li>
+            </ul>
+          </li>
+          <li><a <?= $this->uri->segment(2) == 'proses' && $this->uri->segment(1) == 'home' ? 'class="active"' : '' ?> href="<?= base_url("home/proses"); ?>">PROSES PRODUKSI</a></li>
+          <li><a <?= $this->uri->segment(2) == 'produk' && $this->uri->segment(1) == 'home' ? 'class="active"' : '' ?> href="<?= base_url("home/produk"); ?>">PRODUK</a></li>
+          <li><a <?= $this->uri->segment(2) == 'berita' && $this->uri->segment(1) == 'home' ? 'class="active"' : '' ?> href="<?= base_url("home/berita"); ?>">BERITA</a></li>
+          <li><a <?= $this->uri->segment(2) == 'karir' && $this->uri->segment(1) == 'home' ? 'class="active"' : '' ?> href="<?= base_url("home/karir"); ?>">KARIR</a></li>
+          <li><a <?= $this->uri->segment(2) == 'hubungi_kami' && $this->uri->segment(1) == 'home' ? 'class="active"' : '' ?> href="<?= base_url("home/hubungi_kami"); ?>">HUBUNGI KAMI</a></li>
+
+        </ul>
+        <i class="bi bi-list mobile-nav-toggle"></i>
+      </nav>
+    </div>
+  </header>

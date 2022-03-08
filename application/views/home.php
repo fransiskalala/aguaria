@@ -1,0 +1,95 @@
+<main id="main">
+   <section id="hero">
+      <div id="heroCarousel" data-bs-interval="5000" class="carousel slide carousel-fade" data-bs-ride="carousel">
+
+         <ol class="carousel-indicators" id="hero-carousel-indicators"></ol>
+
+         <div class="carousel-inner" role="listbox">
+
+
+            <?php $x = 0;
+            foreach ($slider as $key => $value) { ?>
+
+               <div <?= $x == 0 ? 'class="carousel-item active"' : 'class="carousel-item"' ?> style="background-image: url(<?= base_url('foto_slider/' . $value->foto_slider); ?>)">
+                  <div class="carousel-container">
+                     <div class="container">
+
+                     </div>
+                  </div>
+               </div>
+
+            <?php $x++;
+            } ?>
+
+         </div>
+
+         <a class="carousel-control-prev" href="#heroCarousel" role="button" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon bi bi-chevron-left" aria-hidden="true"></span>
+         </a>
+
+         <a class="carousel-control-next" href="#heroCarousel" role="button" data-bs-slide="next">
+            <span class="carousel-control-next-icon bi bi-chevron-right" aria-hidden="true"></span>
+         </a>
+
+      </div>
+   </section>
+</main>
+<main id="main" class="bg-biru">
+   <div class="container bg-icon">
+      <div class="row home-animate-wrapper">
+         <div class="col-md-4 col-xs-12 text-center animate-produk animate__animated animate__zoomInLeft animate__delay-1s">
+            <img class="col-md-12 col-xs-12 home-icon-padding" src="<?php echo base_url(); ?>images/LogoProduk.png" class="d-block w-1" alt="...">
+            <h2>Produk</h2>
+            <p>Kami menghadirkan Air Minum Dalam Kemasan yang bersumber dari mata air pegunungan terbaik serta terjamin kualitasnya.</p>
+            <a class="btn btn-aguaria" href="<?= base_url('home/produk') ?>" role="button">Selengkapnya</a>
+         </div>
+         <div class="col-md-4 col-xs-12 text-center animate-proses animate__animated animate__zoomInUp animate__delay-1s">
+            <img class="col-md-12 col-xs-12 home-icon-padding" src="<?php echo base_url(); ?>images/LogoProses.png">
+            <h2>Proses Produksi</h2>
+            <p>Tanpa adanya proses produksi yang bersih, higienis, dan steril, maka tidak akan terbentuk produk AGUARIA kesayangan anda.</p>
+            <a class="btn btn-aguaria" href="<?= base_url('home/proses') ?>" role="button">Selengkapnya</a>
+         </div>
+         <div class="col-md-4 col-xs-12 text-center animate-karir animate__animated animate__zoomInRight animate__delay-1s">
+            <img class="col-md-12 col-xs-12 home-icon-padding" src="<?php echo base_url(); ?>images/LogoKarir.png">
+            <h2>Karir</h2>
+            <p>Bergabung dan berkembanglah bersama AGUARIA untuk inovasi-inovasi yang berguna di masa yang akan datang.</p>
+            <a class="btn btn-aguaria" href="<?= base_url('home/karir') ?>" role="button">Selengkapnya</a>
+         </div>
+      </div>
+      <br>
+      <br>
+</main>
+<main id="main">
+   <div class="section-title">
+      <br>
+      <br>
+      <p>Kenapa Harus Aguaria?</p>
+   </div>
+   <div class="container pb-5">
+      <div id="accordion">
+         <?php
+         $x = 0;
+         foreach ($faq as $key => $value) {
+         ?>
+            <div id="<?= $x ?>">
+               <div class="card-header" id="heading-<?= $x ?>">
+                  <h5 class="mb-0">
+                     <button <?= $x == 0 ? 'class="btn judul-faq faq-title-btn"' : 'class="btn judul-faq faq-title-btn collapsed"' ?> data-toggle="collapse" data-target="#collapse-<?= $x ?>" aria-expanded="true" aria-controls="collapse-<?= $x ?>">
+                        <?= $value->judul_faq ?>
+                     </button>
+                  </h5>
+               </div>
+               <div id="collapse-<?= $x ?>" <?= $x == 0 ? 'class="collapse show"' : 'class="collapse"' ?> aria-labelledby="heading-<?= $x ?>" data-parent="#accordion">
+                  <div class="isi-faq">
+                     <?= $value->penjelasan_faq ?>
+                  </div>
+               </div>
+            </div>
+         <?php $x++;
+         } ?>
+      </div>
+   </div>
+
+
+
+</main>
