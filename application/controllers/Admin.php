@@ -10,10 +10,6 @@ class Admin extends CI_Controller
 		$this->load->model('m_admin');
 	}
 
-	public function Aa()
-	{
-	}
-
 	public function index()
 	{
 		$data = array(
