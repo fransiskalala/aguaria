@@ -9,6 +9,7 @@ class Aaaaa extends CI_Controller {
 	{
 		parent::__construct();
 		//mencoba
+		//ndausah ajarin, tak buatin, kamu aja bobo besok berangkat pagi hehe
 	}
 	
 	public function index()
