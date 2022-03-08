@@ -1,6 +1,6 @@
 .gallery-block {
 	padding-bottom: 60px;
-	padding-top: 60px;
+	padding-top: 0;
 }
 
 .gallery-block .heading {
@@ -17,11 +17,10 @@
 .gallery-block.compact-gallery .item {
 	overflow: hidden;
 	margin-bottom: 0;
+	padding: 0;
 	background: black;
 	opacity: 1;
 	position: relative;
-	padding-left: 0;
-	padding-right: 0;
 }
 
 .gallery-block.compact-gallery .item .image {

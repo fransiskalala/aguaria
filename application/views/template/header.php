@@ -28,9 +28,9 @@
 	<link href="https://netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.css" rel="stylesheet">
 	<link href="<?= base_url() ?>fffffront/assets/css/faq/faq.css" rel="stylesheet">
 	<link href="<?= base_url() ?>fffffront/assets/css/animate.css" rel="stylesheet">
-	<!-- <link href="<?= base_url() ?>fffffront/assets/css/animate.css" rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"> -->
 	<link href="<?= base_url() ?>fffffront/assets/css/gallery/baguetteBox.min.css" rel="stylesheet" />
 	<link href="<?= base_url() ?>fffffront/assets/css/gallery/compact-gallery.css" rel="stylesheet" />
+	<link href="<?= base_url() ?>fffffront/assets/css/gallery/grid-gallery.css" rel="stylesheet" />
 	<link href="<?= base_url() ?>fffffront/assets/fonts/stylesheet.css" rel="stylesheet">
 
 </head>
@@ -58,6 +58,7 @@
 					<li><a <?= $this->uri->segment(2) == 'proses' && $this->uri->segment(1) == 'home' ? 'class="active"' : '' ?> href="<?= base_url("home/proses"); ?>">PROSES PRODUKSI</a></li>
 					<li><a <?= $this->uri->segment(2) == 'produk' && $this->uri->segment(1) == 'home' ? 'class="active"' : '' ?> href="<?= base_url("home/produk"); ?>">PRODUK</a></li>
 					<li><a <?= $this->uri->segment(2) == 'berita' && $this->uri->segment(1) == 'home' ? 'class="active"' : '' ?> href="<?= base_url("home/berita"); ?>">BERITA</a></li>
+					<li><a <?= $this->uri->segment(2) == 'galeri' && $this->uri->segment(1) == 'home' ? 'class="active"' : '' ?> href="<?= base_url("home/galeri"); ?>">GALERI</a></li>
 					<li><a <?= $this->uri->segment(2) == 'karir' && $this->uri->segment(1) == 'home' ? 'class="active"' : '' ?> href="<?= base_url("home/karir"); ?>">KARIR</a></li>
 					<li><a <?= $this->uri->segment(2) == 'hubungi_kami' && $this->uri->segment(1) == 'home' ? 'class="active"' : '' ?> href="<?= base_url("home/hubungi_kami"); ?>">HUBUNGI KAMI</a></li>
 
