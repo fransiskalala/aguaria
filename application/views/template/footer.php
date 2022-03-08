@@ -40,9 +40,10 @@
 
   <script src="<?= base_url() ?>fffffront/assets/js/main.js"></script>
   <script src="/docs/5.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
-  <script src="<?= base_url() ?>fffffront/assets/faq/jquery.min.js"></script>
-  <script src="<?= base_url() ?>fffffront/assets/faq/bootstrap.min.js"></script>
+  <script src="<?= base_url() ?>fffffront/assets/js/faq/jquery.min.js"></script>
+  <script src="<?= base_url() ?>fffffront/assets/js/faq/bootstrap.min.js"></script>
   <script src="<?= base_url() ?>fffffront/assets/js/animate.js"></script>
+	<script src="<?= base_url() ?>fffffront/assets/js/gallery/baguetteBox.min.js"></script>
 
   </body>
 
