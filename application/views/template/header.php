@@ -48,17 +48,17 @@
 				<ul>
 					<li><a <?= $this->uri->segment(1) == '' ? 'class="active"' : '' ?> href="<?= base_url(); ?>">HOME</a></li>
 
-					<li class="dropdown"><a <?= $this->uri->segment(1) == 'home' && $this->uri->segment(2) == 'sejarah' || $this->uri->segment(2) == 'visimisi' || $this->uri->segment(2) == 'artilogo' ? 'class="active"' : '' ?> href="#"><span>PERUSAHAAN</span> <i class="bi bi-chevron-down"></i></a>
+					<li class="dropdown"><a <?= $this->uri->segment(1) == 'home' && $this->uri->segment(2) == 'sejarah' || $this->uri->segment(2) == 'visimisi' || $this->uri->segment(2) == 'tentang' ? 'class="active"' : '' ?> href="#"><span>PERUSAHAAN</span> <i class="bi bi-chevron-down"></i></a>
 						<ul>
 							<li><a <?= $this->uri->segment(2) == 'sejarah' ? 'class="active"' : '' ?> href="<?= base_url("home/sejarah"); ?>">SEJARAH</a></li>
 							<li><a <?= $this->uri->segment(2) == 'visimisi' ? 'class="active"' : '' ?>href="<?= base_url("home/visimisi"); ?>">VISI & MISI</a></li>
-							<li><a <?= $this->uri->segment(2) == 'artilogo' ? 'class="active"' : '' ?>href="<?= base_url("home/tentang"); ?>">TENTANG AGUARIA</a></li>
+							<li><a <?= $this->uri->segment(2) == 'tentang' ? 'class="active"' : '' ?>href="<?= base_url("home/tentang"); ?>">TENTANG AGUARIA</a></li>
 						</ul>
 					</li>
 					<li><a <?= $this->uri->segment(2) == 'proses' && $this->uri->segment(1) == 'home' ? 'class="active"' : '' ?> href="<?= base_url("home/proses"); ?>">PROSES PRODUKSI</a></li>
 					<li><a <?= $this->uri->segment(2) == 'produk' && $this->uri->segment(1) == 'home' ? 'class="active"' : '' ?> href="<?= base_url("home/produk"); ?>">PRODUK</a></li>
-					<li><a <?= $this->uri->segment(2) == 'berita' && $this->uri->segment(1) == 'home' ? 'class="active"' : '' ?> href="<?= base_url("home/berita"); ?>">BERITA</a></li>
-					<li><a <?= $this->uri->segment(2) == 'galeri' && $this->uri->segment(1) == 'home' ? 'class="active"' : '' ?> href="<?= base_url("home/galeri"); ?>">GALERI</a></li>
+					<li><a <?= $this->uri->segment(2) == 'berita' || $this->uri->segment(2) == 'detail_berita' && $this->uri->segment(1) == 'home' ? 'class="active"' : '' ?> href="<?= base_url("home/berita"); ?>">BERITA</a></li>
+					<li><a <?= $this->uri->segment(2) == 'galeri' || $this->uri->segment(2) == 'detail_galeri' && $this->uri->segment(1) == 'home' ? 'class="active"' : '' ?> href="<?= base_url("home/galeri"); ?>">GALERI</a></li>
 					<li><a <?= $this->uri->segment(2) == 'karir' && $this->uri->segment(1) == 'home' ? 'class="active"' : '' ?> href="<?= base_url("home/karir"); ?>">KARIR</a></li>
 					<li><a <?= $this->uri->segment(2) == 'hubungi_kami' && $this->uri->segment(1) == 'home' ? 'class="active"' : '' ?> href="<?= base_url("home/hubungi_kami"); ?>">HUBUNGI KAMI</a></li>
 

@@ -20,7 +20,7 @@
         <div class="col-lg-8 entries">
           <div class="row" id="berita">
             <?php foreach ($berita as $key => $value) { ?>
-              <div class="col col-lg-6 col-md-6">
+              <div class="col col-auto col-md-6 col-lg-6">
                 <article class="entry">
                   <div class="entry-img">
                     <img src="<?= base_url('gambar_berita/' . $value->gambar_berita) ?>" alt="" class="img-fluid">
