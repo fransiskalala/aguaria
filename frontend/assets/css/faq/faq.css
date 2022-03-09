@@ -1,0 +1,103 @@
+.faq-title-btn {
+    background: none;
+    outline: none !important;
+    border: none;
+    width: 100%;
+    text-align: left;
+    padding: 15px;
+}
+
+.card-body {
+    font-size: 16px;
+    font-family: "Open sans", sans-serif;
+}
+
+.faq-title-btn {
+    -moz-transition: all 0.3s ease-in-out;
+    -o-transition: all 0.3s ease-in-out;
+    -webkit-transition: all 0.3s ease-in-out;
+    -ms-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+}
+
+button.judul-faq:after {
+    content: "\f106";
+    font-family: "FontAwesome";
+    float: right;
+    font-size: 26px;
+}
+
+button.btn.judul-faq.collapsed:after {
+    content: "\f107";
+}
+
+button.judul-faq:focus {
+    box-shadow: 0 0 0 0.25rem rgb(13 110 253 / 0%);
+}
+
+button.btn.judul-faq.collapsed:focus {
+    box-shadow: 0 0 0 0.25rem rgb(13 110 253 / 0%);
+}
+
+.judul-faq {
+    font-size: large;
+}
+
+.isi-faq {
+    margin: 0rem 3rem 0rem 2rem;
+}
+
+.card-header {
+    padding: 0;
+    margin-bottom: 0;
+    background-color: rgba(0, 0, 0, 0);
+    border-bottom: 0px solid rgba(0, 0, 0, 0);
+}
+
+.karir-title-btn {
+    background: none;
+    outline: none !important;
+    border: none;
+    width: 100%;
+    text-align: center;
+    padding: 20px;
+}
+
+.karir-title-btn {
+    -moz-transition: all 0.3s ease-in-out;
+    -o-transition: all 0.3s ease-in-out;
+    -webkit-transition: all 0.3s ease-in-out;
+    -ms-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+}
+
+button.btn-karir:after {
+    content: "\f106";
+    font-family: "FontAwesome";
+    font-size: 26px;
+}
+
+button.btn.btn-karir.collapsed:after {
+    content: "\f107";
+}
+
+.btn-karir {
+    font-size: larger;
+    color: #00458f;
+    padding: unset;
+}
+
+.btn-karir:hover {
+    color: #0056b3;
+}
+
+.btn-karir:focus {
+    box-shadow: unset !important;
+}
+
+.pad-karir {
+    padding-top: 2rem;
+    padding-right: 2rem;
+    padding-bottom: 0rem;
+    padding-left: 2rem;
+}

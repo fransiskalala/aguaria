@@ -7,10 +7,10 @@
         </div>
       </div>
     </div>
-    <link href="<?= base_url() ?>fffffront/assets/css/owl.carousel.min.css" rel="stylesheet" />
-    <link href="<?= base_url() ?>fffffront/assets/css/owl.theme.default.min.css" rel="stylesheet" />
+    <link href="<?= base_url() ?>frontend/assets/css/owl.carousel.min.css" rel="stylesheet" />
+    <link href="<?= base_url() ?>frontend/assets/css/owl.theme.default.min.css" rel="stylesheet" />
     <link href="https://cdnjs.cloudflare.com/ajax/libs/ionicons/4.5.6/css/ionicons.min.css" rel="stylesheet" />
-    <link href="<?= base_url() ?>fffffront/assets/css/style.css" rel="stylesheet" />
+    <link href="<?= base_url() ?>frontendfrontend/assets/css/style.css" rel="stylesheet" />
   </section>
 
   <div class="section-title">
@@ -56,9 +56,9 @@
     </div>
   </section>
 
-  <script src="<?= base_url() ?>fffffront/assets/js/jquery.min.js"></script>
-  <script src="<?= base_url() ?>fffffront/assets/js/popper.js"></script>
-  <script src="<?= base_url() ?>fffffront/assets/js/bootstrap.min.js"></script>
-  <script src="<?= base_url() ?>fffffront/assets/js/owl.carousel.min.js"></script>
+  <script src="<?= base_url() ?>frontend/assets/js/jquery.min.js"></script>
+  <script src="<?= base_url() ?>frontend/assets/js/popper.js"></script>
+  <script src="<?= base_url() ?>frontend/assets/js/bootstrap.min.js"></script>
+  <script src="<?= base_url() ?>frontend/assets/js/owl.carousel.min.js"></script>
 
 </main>

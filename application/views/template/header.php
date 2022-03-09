@@ -13,25 +13,25 @@
 	<link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
 
 
-	<link href="<?= base_url() ?>fffffront/assets/vendor/animate.css/animate.min.css" rel="stylesheet">
-	<link href="<?= base_url() ?>fffffront/assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
-	<link href="<?= base_url() ?>fffffront/assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
-	<link href="<?= base_url() ?>fffffront/assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
-	<link href="<?= base_url() ?>fffffront/assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
-	<link href="<?= base_url() ?>fffffront/assets/vendor/remixicon/remixicon.css" rel="stylesheet">
-	<link href="<?= base_url() ?>fffffront/assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+	<link href="<?= base_url() ?>frontend/assets/vendor/animate.css/animate.min.css" rel="stylesheet">
+	<link href="<?= base_url() ?>frontend/assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+	<link href="<?= base_url() ?>frontend/assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+	<link href="<?= base_url() ?>frontend/assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
+	<link href="<?= base_url() ?>frontend/assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+	<link href="<?= base_url() ?>frontend/assets/vendor/remixicon/remixicon.css" rel="stylesheet">
+	<link href="<?= base_url() ?>frontend/assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
 
 
 
-	<link href="<?= base_url() ?>fffffront/assets/css/style.css" rel="stylesheet">
-	<link href="<?= base_url() ?>fffffront/assets/css/carousel.css" rel="stylesheet">
+	<link href="<?= base_url() ?>frontend/assets/css/style.css" rel="stylesheet">
+	<link href="<?= base_url() ?>frontend/assets/css/carousel.css" rel="stylesheet">
 	<link href="https://netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.css" rel="stylesheet">
-	<link href="<?= base_url() ?>fffffront/assets/css/faq/faq.css" rel="stylesheet">
-	<link href="<?= base_url() ?>fffffront/assets/css/animate.css" rel="stylesheet">
-	<link href="<?= base_url() ?>fffffront/assets/css/gallery/baguetteBox.min.css" rel="stylesheet" />
-	<link href="<?= base_url() ?>fffffront/assets/css/gallery/compact-gallery.css" rel="stylesheet" />
-	<link href="<?= base_url() ?>fffffront/assets/css/gallery/grid-gallery.css" rel="stylesheet" />
-	<link href="<?= base_url() ?>fffffront/assets/fonts/stylesheet.css" rel="stylesheet">
+	<link href="<?= base_url() ?>frontend/assets/css/faq/faq.css" rel="stylesheet">
+	<link href="<?= base_url() ?>frontend/assets/css/animate.css" rel="stylesheet">
+	<link href="<?= base_url() ?>frontend/assets/css/gallery/baguetteBox.min.css" rel="stylesheet" />
+	<link href="<?= base_url() ?>frontend/assets/css/gallery/compact-gallery.css" rel="stylesheet" />
+	<link href="<?= base_url() ?>frontend/assets/css/gallery/grid-gallery.css" rel="stylesheet" />
+	<link href="<?= base_url() ?>frontend/assets/fonts/stylesheet.css" rel="stylesheet">
 
 </head>
 

@@ -31,19 +31,19 @@
   <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
 
 
-  <script src="<?= base_url() ?>fffffront/assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
-  <script src="<?= base_url() ?>fffffront/assets/vendor/glightbox/js/glightbox.min.js"></script>
-  <script src="<?= base_url() ?>fffffront/assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
-  <script src="<?= base_url() ?>fffffront/assets/vendor/swiper/swiper-bundle.min.js"></script>
-  <script src="<?= base_url() ?>fffffront/assets/vendor/waypoints/noframework.waypoints.js"></script>
-  <script src="<?= base_url() ?>fffffront/assets/vendor/php-email-form/validate.js"></script>
+  <script src="<?= base_url() ?>frontend/assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="<?= base_url() ?>frontend/assets/vendor/glightbox/js/glightbox.min.js"></script>
+  <script src="<?= base_url() ?>frontend/assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+  <script src="<?= base_url() ?>frontend/assets/vendor/swiper/swiper-bundle.min.js"></script>
+  <script src="<?= base_url() ?>frontend/assets/vendor/waypoints/noframework.waypoints.js"></script>
+  <script src="<?= base_url() ?>frontend/assets/vendor/php-email-form/validate.js"></script>
 
-  <script src="<?= base_url() ?>fffffront/assets/js/main.js"></script>
+  <script src="<?= base_url() ?>frontend/assets/js/main.js"></script>
   <script src="/docs/5.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
-  <script src="<?= base_url() ?>fffffront/assets/js/faq/jquery.min.js"></script>
-  <script src="<?= base_url() ?>fffffront/assets/js/faq/bootstrap.min.js"></script>
-  <script src="<?= base_url() ?>fffffront/assets/js/animate.js"></script>
-  <script src="<?= base_url() ?>fffffront/assets/js/gallery/baguetteBox.min.js"></script>
+  <script src="<?= base_url() ?>frontend/assets/js/faq/jquery.min.js"></script>
+  <script src="<?= base_url() ?>frontend/assets/js/faq/bootstrap.min.js"></script>
+  <script src="<?= base_url() ?>frontend/assets/js/animate.js"></script>
+  <script src="<?= base_url() ?>frontend/assets/js/gallery/baguetteBox.min.js"></script>
   <script>
   	baguetteBox.run('.grid-gallery', {
   		animation: 'slideIn'

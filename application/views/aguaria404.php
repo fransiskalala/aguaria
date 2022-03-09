@@ -7,7 +7,7 @@
             <meta name="viewport" content="width=device-width, initial-scale=1">
             <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.10.2/css/all.css">
             <link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700,900&display=swap" rel="stylesheet">
-            <link href="<?= base_url() ?>fffffront/assets/css/aguaria404.css" rel="stylesheet" />
+            <link href="<?= base_url() ?>frontend/assets/css/aguaria404.css" rel="stylesheet" />
         </head>
 
         <body>

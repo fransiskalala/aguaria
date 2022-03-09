@@ -7,11 +7,11 @@
                 </div>
             </div>
         </div>
-        <link href="<?= base_url() ?>fffffront/assets/css/owl.carousel.min.css" rel="stylesheet" />
-        <link href="<?= base_url() ?>fffffront/assets/css/owl.theme.default.min.css" rel="stylesheet" />
+        <link href="<?= base_url() ?>frontend/assets/css/owl.carousel.min.css" rel="stylesheet" />
+        <link href="<?= base_url() ?>frontend/assets/css/owl.theme.default.min.css" rel="stylesheet" />
         <link href="https://cdnjs.cloudflare.com/ajax/libs/ionicons/4.5.6/css/ionicons.min.css" rel="stylesheet" />
-        <link href="<?= base_url() ?>fffffront/assets/css/style.css" rel="stylesheet" />
-        <link href="<?= base_url() ?>fffffront/assets/css/proses.css" rel="stylesheet" />
+        <link href="<?= base_url() ?>frontend/assets/css/style.css" rel="stylesheet" />
+        <link href="<?= base_url() ?>frontend/assets/css/proses.css" rel="stylesheet" />
     </section>
 
     <div class="section-title">

@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Mar 08, 2022 at 02:32 AM
+-- Generation Time: Mar 09, 2022 at 07:07 AM
 -- Server version: 10.4.22-MariaDB
 -- PHP Version: 7.4.27
 
@@ -112,8 +112,9 @@ CREATE TABLE `galeri` (
 --
 
 INSERT INTO `galeri` (`id_galeri`, `caption_galeri`, `sampul_galeri`, `tgl_dibuat`) VALUES
-(1, 'Tes Galeri Beneran 1', '12709.jpg', '2022-03-07 19:04:55'),
-(2, 'Tes Galeri Beneran 2', '164903.jpg', '2022-03-07 19:05:33');
+(7, 'Penanaman Bibit Pohon dan Konservasi Sumber Mata Air Desa Keji', 'Konservasi_Sumber_Mata_Air_Desa_Keji.JPG', '2022-03-09 04:47:36'),
+(8, 'Factory Visit SMK Nusa Putera', 'Factory_Visit_Dari_SMK_Nusput.jpg', '2022-03-09 04:47:03'),
+(9, 'Bantuan Bakti Sosial di Beberapa Sektor', 'Penyerahan_Bantuan_Beras.JPG', '2022-03-09 04:47:29');
 
 -- --------------------------------------------------------
 
@@ -142,7 +143,31 @@ INSERT INTO `galeri_foto` (`id_foto`, `id_galeri`, `foto_galeri`) VALUES
 (8, 1, '1007243.jpg'),
 (9, 1, '942488.jpg'),
 (10, 1, '1103349.jpg'),
-(11, 1, 'Iron_Man.jpg');
+(11, 1, 'Iron_Man.jpg'),
+(12, 3, 'Logo_Proses.png'),
+(13, 4, 'Factory_Visit_SMK_Nusput.jpg'),
+(14, 4, 'Factory_Visit_Dari_SMK_Nusput.jpg'),
+(15, 5, 'Bantua_Kegiatan_Baksos_SMA_Bina_Amal.jpg'),
+(16, 5, 'Penyerahan_Bantuan_Bakti_Sosial.jpg'),
+(17, 5, 'Penyerahan_Bantuan_Beras_Kepada_Karyawan.jpeg'),
+(18, 5, 'Penyerahan_Bantuan_Banjir_Grobogan.jpg'),
+(20, 6, 'Konservasi_Sumber_Mata_Air_Desa_Keji.JPG'),
+(21, 6, 'Konservasi_Sumber_Mata_Air_Desa_Keji1.JPG'),
+(22, 6, 'Penanaman_di_area_sumber_mata_air.jpg'),
+(23, 6, 'Penyerahan_dan_Penanaman_Bibit_di_lereng_Gunung_Ungaran.jpg'),
+(24, 5, 'Penyaluran_Air_Bersih_Desa_Keji.jpg'),
+(25, 5, 'Penyerahan_Bantuan_Beras.JPG'),
+(28, 7, 'Penyerahan_dan_Penanaman_Bibit_di_lereng_Gunung_Ungaran1.jpg'),
+(29, 7, 'Konservasi_Sumber_Mata_Air_Desa_Keji11.JPG'),
+(30, 7, 'Penanaman_di_area_sumber_mata_air1.jpg'),
+(31, 7, 'Konservasi_Sumber_Mata_Air_Desa_Keji2.JPG'),
+(32, 8, 'Factory_Visit_SMK_Nusput1.jpg'),
+(33, 9, 'Bantua_Kegiatan_Baksos_SMA_Bina_Amal1.jpg'),
+(34, 9, 'Penyerahan_Bantuan_Bakti_Sosial1.jpg'),
+(35, 9, 'Penyaluran_Air_Bersih_Desa_Keji1.jpg'),
+(36, 9, 'Penyerahan_Bantuan_Banjir_Grobogan1.jpg'),
+(37, 9, 'Penyerahan_Bantuan_Beras_Kepada_Karyawan1.jpeg'),
+(38, 9, 'Penyerahan_Bantuan_Beras1.JPG');
 
 -- --------------------------------------------------------
 
@@ -517,13 +542,13 @@ ALTER TABLE `feedback`
 -- AUTO_INCREMENT for table `galeri`
 --
 ALTER TABLE `galeri`
-  MODIFY `id_galeri` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
+  MODIFY `id_galeri` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=10;
 
 --
 -- AUTO_INCREMENT for table `galeri_foto`
 --
 ALTER TABLE `galeri_foto`
-  MODIFY `id_foto` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=12;
+  MODIFY `id_foto` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=39;
 
 --
 -- AUTO_INCREMENT for table `informasi`

@@ -2,7 +2,7 @@
 	<section id="banner">
 		<div class="carousel-inner">
 			<div class="carousel-item active">
-				<img src="<?= base_url(); ?>images/HEADER-CREATE7.jpg" class="d-block w-100" alt="...">
+				<img src="<?= base_url(); ?>images/HEADER-CREATE12.jpg" class="d-block w-100" alt="...">
 				<div class="carousel-caption d-none d-md-block">
 				</div>
 			</div>
