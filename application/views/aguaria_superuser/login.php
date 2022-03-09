@@ -9,8 +9,8 @@
   <meta content="" name="description">
   <meta content="" name="keywords">
 
-  <link href="<?= base_url() ?>frontend/assets/css/login.css" rel="stylesheet">
-  <link href="<?= base_url() ?>frontend/assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="<?= base_url() ?>backend/assets/css/login.css" rel="stylesheet">
+  <link href="<?= base_url() ?>backend/assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
 
 </head>
 
@@ -64,9 +64,9 @@
   </main><!-- End #main -->
 
   <!-- Template Main JS File -->
-  <script src="<?= base_url() ?>frontend/assets/js/login.js"></script>
-  <script src="<?= base_url() ?>frontend/assets/js/anime_2.2.0.js"></script>
-  <script src="<?= base_url() ?>frontend/assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="<?= base_url() ?>backend/assets/js/login.js"></script>
+  <script src="<?= base_url() ?>backend/assets/js/anime_2.2.0.js"></script>
+  <script src="<?= base_url() ?>backend/assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
 
 </body>
 
