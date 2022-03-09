@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Mar 09, 2022 at 07:07 AM
+-- Generation Time: Mar 09, 2022 at 08:25 AM
 -- Server version: 10.4.22-MariaDB
 -- PHP Version: 7.4.27
 
@@ -133,30 +133,6 @@ CREATE TABLE `galeri_foto` (
 --
 
 INSERT INTO `galeri_foto` (`id_foto`, `id_galeri`, `foto_galeri`) VALUES
-(1, 2, '3327402.jpg'),
-(2, 2, '165015.jpg'),
-(3, 2, '606284.jpg'),
-(4, 2, '641994.jpg'),
-(5, 2, '649992.jpg'),
-(6, 2, '774813.jpg'),
-(7, 1, '93124.jpg'),
-(8, 1, '1007243.jpg'),
-(9, 1, '942488.jpg'),
-(10, 1, '1103349.jpg'),
-(11, 1, 'Iron_Man.jpg'),
-(12, 3, 'Logo_Proses.png'),
-(13, 4, 'Factory_Visit_SMK_Nusput.jpg'),
-(14, 4, 'Factory_Visit_Dari_SMK_Nusput.jpg'),
-(15, 5, 'Bantua_Kegiatan_Baksos_SMA_Bina_Amal.jpg'),
-(16, 5, 'Penyerahan_Bantuan_Bakti_Sosial.jpg'),
-(17, 5, 'Penyerahan_Bantuan_Beras_Kepada_Karyawan.jpeg'),
-(18, 5, 'Penyerahan_Bantuan_Banjir_Grobogan.jpg'),
-(20, 6, 'Konservasi_Sumber_Mata_Air_Desa_Keji.JPG'),
-(21, 6, 'Konservasi_Sumber_Mata_Air_Desa_Keji1.JPG'),
-(22, 6, 'Penanaman_di_area_sumber_mata_air.jpg'),
-(23, 6, 'Penyerahan_dan_Penanaman_Bibit_di_lereng_Gunung_Ungaran.jpg'),
-(24, 5, 'Penyaluran_Air_Bersih_Desa_Keji.jpg'),
-(25, 5, 'Penyerahan_Bantuan_Beras.JPG'),
 (28, 7, 'Penyerahan_dan_Penanaman_Bibit_di_lereng_Gunung_Ungaran1.jpg'),
 (29, 7, 'Konservasi_Sumber_Mata_Air_Desa_Keji11.JPG'),
 (30, 7, 'Penanaman_di_area_sumber_mata_air1.jpg'),
@@ -357,20 +333,6 @@ INSERT INTO `tentang` (`id_tentang`, `nama_tentang`, `keterangan`, `foto_tentang
 -- --------------------------------------------------------
 
 --
--- Table structure for table `tes`
---
-
-CREATE TABLE `tes` (
-  `dsds` int(11) NOT NULL,
-  `sdds` int(11) NOT NULL,
-  `sds` int(11) NOT NULL,
-  `sd` int(11) NOT NULL,
-  `sdd` int(11) NOT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
-
--- --------------------------------------------------------
-
---
 -- Table structure for table `user`
 --
 
@@ -503,112 +465,6 @@ ALTER TABLE `slider`
 --
 ALTER TABLE `tentang`
   ADD PRIMARY KEY (`id_tentang`);
-
---
--- Indexes for table `user`
---
-ALTER TABLE `user`
-  ADD PRIMARY KEY (`id`);
-
---
--- Indexes for table `visi_misi`
---
-ALTER TABLE `visi_misi`
-  ADD PRIMARY KEY (`id_visimisi`);
-
---
--- AUTO_INCREMENT for dumped tables
---
-
---
--- AUTO_INCREMENT for table `berita`
---
-ALTER TABLE `berita`
-  MODIFY `id_berita` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=18;
-
---
--- AUTO_INCREMENT for table `faq`
---
-ALTER TABLE `faq`
-  MODIFY `id_faq` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=7;
-
---
--- AUTO_INCREMENT for table `feedback`
---
-ALTER TABLE `feedback`
-  MODIFY `id_feedback` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=5;
-
---
--- AUTO_INCREMENT for table `galeri`
---
-ALTER TABLE `galeri`
-  MODIFY `id_galeri` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=10;
-
---
--- AUTO_INCREMENT for table `galeri_foto`
---
-ALTER TABLE `galeri_foto`
-  MODIFY `id_foto` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=39;
-
---
--- AUTO_INCREMENT for table `informasi`
---
-ALTER TABLE `informasi`
-  MODIFY `id_informasi` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
-
---
--- AUTO_INCREMENT for table `karir`
---
-ALTER TABLE `karir`
-  MODIFY `id_karir` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=9;
-
---
--- AUTO_INCREMENT for table `produk`
---
-ALTER TABLE `produk`
-  MODIFY `id_produk` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=15;
-
---
--- AUTO_INCREMENT for table `proses`
---
-ALTER TABLE `proses`
-  MODIFY `id_proses` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=12;
-
---
--- AUTO_INCREMENT for table `proses_g`
---
-ALTER TABLE `proses_g`
-  MODIFY `id_prosesg` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=11;
-
---
--- AUTO_INCREMENT for table `sejarah`
---
-ALTER TABLE `sejarah`
-  MODIFY `id_sejarah` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
-
---
--- AUTO_INCREMENT for table `slider`
---
-ALTER TABLE `slider`
-  MODIFY `id_slider` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=5;
-
---
--- AUTO_INCREMENT for table `tentang`
---
-ALTER TABLE `tentang`
-  MODIFY `id_tentang` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
-
---
--- AUTO_INCREMENT for table `user`
---
-ALTER TABLE `user`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=13;
-
---
--- AUTO_INCREMENT for table `visi_misi`
---
-ALTER TABLE `visi_misi`
-  MODIFY `id_visimisi` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
