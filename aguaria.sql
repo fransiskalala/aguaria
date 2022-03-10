@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Mar 09, 2022 at 08:25 AM
+-- Generation Time: Mar 10, 2022 at 02:08 AM
 -- Server version: 10.4.22-MariaDB
 -- PHP Version: 7.4.27
 
@@ -112,7 +112,7 @@ CREATE TABLE `galeri` (
 --
 
 INSERT INTO `galeri` (`id_galeri`, `caption_galeri`, `sampul_galeri`, `tgl_dibuat`) VALUES
-(7, 'Penanaman Bibit Pohon dan Konservasi Sumber Mata Air Desa Keji', 'Konservasi_Sumber_Mata_Air_Desa_Keji.JPG', '2022-03-09 04:47:36'),
+(7, 'Penanaman Bibit Pohon dan Konservasi Sumber Mata Air Desa Keji', 'Konservasi_Sumber_Mata_Air_Desa_Keji1.JPG', '2022-03-10 00:53:38'),
 (8, 'Factory Visit SMK Nusa Putera', 'Factory_Visit_Dari_SMK_Nusput.jpg', '2022-03-09 04:47:03'),
 (9, 'Bantuan Bakti Sosial di Beberapa Sektor', 'Penyerahan_Bantuan_Beras.JPG', '2022-03-09 04:47:29');
 
