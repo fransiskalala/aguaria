@@ -13,17 +13,25 @@
 	<div class="section-title">
 		<p><?= $caption_galeri->caption_galeri ?></p>
 	</div>
-	<section class="gallery-block grid-gallery">
+
+	<section class="gallery-block cards-gallery">
 		<div class="container">
 			<div class="row">
 				<?php foreach ($detail_galeri as $key => $value) { ?>
-					<div class="col-md-6 col-lg-4 item">
-						<a class="lightbox" href="<?= base_url('foto_galeri/' . $value->foto_galeri) ?>">
-							<img class="img-fluid image scale-on-hover" src="<?= base_url('foto_galeri/' . $value->foto_galeri) ?>">
-						</a>
+					<div class="col-md-6 col-lg-4">
+						<div class="card border-0 transform-on-hover">
+							<a class="lightbox" href="<?= base_url('foto_galeri/' . $value->foto_galeri) ?>">
+								<img class="img-fluid image scale-on-hover" src="<?= base_url('foto_galeri/' . $value->foto_galeri) ?>">
+							</a>
+							<div class="card-body">
+								<h6><?= $value->keterangan_foto ?></h6>
+								
+							</div>
+						</div>
 					</div>
 				<?php } ?>
 			</div>
 		</div>
 	</section>
+
 </main>

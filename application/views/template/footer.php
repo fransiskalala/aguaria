@@ -45,7 +45,7 @@
   <script src="<?= base_url() ?>frontend/assets/js/animate.js"></script>
   <script src="<?= base_url() ?>frontend/assets/js/gallery/baguetteBox.min.js"></script>
   <script>
-  	baguetteBox.run('.grid-gallery', {
+  	baguetteBox.run('.cards-gallery', {
   		animation: 'slideIn'
   	});
   </script>

@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Mar 12, 2022 at 06:16 AM
+-- Generation Time: Mar 13, 2022 at 05:01 PM
 -- Server version: 10.4.22-MariaDB
 -- PHP Version: 7.4.27
 
@@ -125,6 +125,7 @@ INSERT INTO `galeri` (`id_galeri`, `caption_galeri`, `sampul_galeri`, `tgl_dibua
 CREATE TABLE `galeri_foto` (
   `id_foto` int(11) NOT NULL,
   `id_galeri` int(11) NOT NULL,
+  `keterangan_foto` text NOT NULL,
   `foto_galeri` varchar(255) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
@@ -132,18 +133,19 @@ CREATE TABLE `galeri_foto` (
 -- Dumping data for table `galeri_foto`
 --
 
-INSERT INTO `galeri_foto` (`id_foto`, `id_galeri`, `foto_galeri`) VALUES
-(28, 7, 'Penyerahan_dan_Penanaman_Bibit_di_lereng_Gunung_Ungaran1.jpg'),
-(29, 7, 'Konservasi_Sumber_Mata_Air_Desa_Keji11.JPG'),
-(30, 7, 'Penanaman_di_area_sumber_mata_air1.jpg'),
-(31, 7, 'Konservasi_Sumber_Mata_Air_Desa_Keji2.JPG'),
-(32, 8, 'Factory_Visit_SMK_Nusput1.jpg'),
-(33, 9, 'Bantua_Kegiatan_Baksos_SMA_Bina_Amal1.jpg'),
-(34, 9, 'Penyerahan_Bantuan_Bakti_Sosial1.jpg'),
-(35, 9, 'Penyaluran_Air_Bersih_Desa_Keji1.jpg'),
-(36, 9, 'Penyerahan_Bantuan_Banjir_Grobogan1.jpg'),
-(37, 9, 'Penyerahan_Bantuan_Beras_Kepada_Karyawan1.jpeg'),
-(38, 9, 'Penyerahan_Bantuan_Beras1.JPG');
+INSERT INTO `galeri_foto` (`id_foto`, `id_galeri`, `keterangan_foto`, `foto_galeri`) VALUES
+(0, 9, 'fafafa', 'Dr__Strange.jpg'),
+(28, 7, '', 'Penyerahan_dan_Penanaman_Bibit_di_lereng_Gunung_Ungaran1.jpg'),
+(29, 7, '', 'Konservasi_Sumber_Mata_Air_Desa_Keji11.JPG'),
+(30, 7, '', 'Penanaman_di_area_sumber_mata_air1.jpg'),
+(31, 7, '', 'Konservasi_Sumber_Mata_Air_Desa_Keji2.JPG'),
+(32, 8, '', 'Factory_Visit_SMK_Nusput1.jpg'),
+(33, 9, 'verervergrvgereeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeee', 'Bantua_Kegiatan_Baksos_SMA_Bina_Amal1.jpg'),
+(34, 9, '', 'Penyerahan_Bantuan_Bakti_Sosial1.jpg'),
+(35, 9, '', 'Penyaluran_Air_Bersih_Desa_Keji1.jpg'),
+(36, 9, '', 'Penyerahan_Bantuan_Banjir_Grobogan1.jpg'),
+(37, 9, '', 'Penyerahan_Bantuan_Beras_Kepada_Karyawan1.jpeg'),
+(38, 9, '', 'Penyerahan_Bantuan_Beras1.JPG');
 
 -- --------------------------------------------------------
 

@@ -161,6 +161,7 @@ class Galeri extends CI_Controller
 
                 $data = array(
                     'id_galeri' => $id_galeri,
+                    'keterangan_foto' => $this->input->post('keterangan_foto'),
                     'foto_galeri' => $upload_data['uploads']['file_name']
                 );
                 $this->m_galeri->add_foto($data);

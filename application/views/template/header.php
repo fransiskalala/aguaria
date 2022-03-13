@@ -30,7 +30,7 @@
 	<link href="<?= base_url() ?>frontend/assets/css/animate.css" rel="stylesheet">
 	<link href="<?= base_url() ?>frontend/assets/css/gallery/baguetteBox.min.css" rel="stylesheet" />
 	<link href="<?= base_url() ?>frontend/assets/css/gallery/compact-gallery.css" rel="stylesheet" />
-	<link href="<?= base_url() ?>frontend/assets/css/gallery/grid-gallery.css" rel="stylesheet" />
+	<link href="<?= base_url() ?>frontend/assets/css/gallery/cards-gallery.css" rel="stylesheet" />
 	<link href="<?= base_url() ?>frontend/assets/fonts/stylesheet.css" rel="stylesheet">
 
 </head>
