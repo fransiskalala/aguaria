@@ -37,13 +37,13 @@
  		</li>
  		<li class="nav-item">
  			<a <?= $this->uri->segment(1) == 'proses' ? 'class="nav-link active"' : '' ?> class="nav-link collapsed" href="<?= base_url('proses') ?>">
- 				<i class="bi bi-bricks"></i>
+ 				<i class="bi bi-gear"></i>
  				<span>Proses Prod Smallpack</span>
  			</a>
  		</li>
  		<li class="nav-item">
  			<a <?= $this->uri->segment(1) == 'prosesg' ? 'class="nav-link active"' : '' ?> class="nav-link collapsed" href="<?= base_url('prosesg') ?>">
- 				<i class="bi bi-bricks"></i>
+ 				<i class="bi bi-gear-fill"></i>
  				<span>Proses Prod Galon</span>
  			</a>
  		</li>
@@ -55,7 +55,7 @@
  		</li>
  		<li class="nav-item">
  			<a <?= $this->uri->segment(1) == 'galeri' ? 'class="nav-link active"' : '' ?> class="nav-link collapsed" href="<?= base_url('galeri') ?>">
- 				<i class="bi bi-wallet-fill"></i>
+ 				<i class="bi bi-card-image"></i>
  				<span>Galeri</span>
  			</a>
  		</li>
