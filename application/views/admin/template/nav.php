@@ -29,6 +29,12 @@
  				<span>Tentang Aguaria</span>
  			</a>
  		</li>
+		 <li class="nav-item">
+ 			<a <?= $this->uri->segment(1) == 'organisasi' ? 'class="nav-link active"' : '' ?> class="nav-link collapsed" href="<?= base_url('organisasi') ?>">
+ 				<i class="ri-globe-line"></i>
+ 				<span>Organisasi</span>
+ 			</a>
+ 		</li>
  		<li class="nav-item">
  			<a <?= $this->uri->segment(1) == 'produk' ? 'class="nav-link active"' : '' ?> class="nav-link collapsed" href="<?= base_url('produk') ?>">
  				<i class="ri-folder-3-fill"></i>

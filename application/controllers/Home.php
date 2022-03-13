@@ -14,6 +14,7 @@ class Home extends CI_Controller
         $this->load->model('m_proses');
         $this->load->model('m_prosesg');
         $this->load->model('m_sejarah');
+        $this->load->model('m_organisasi');
         $this->load->model('m_visimisi');
         $this->load->model('m_karir');
         $this->load->model('m_feedback');
@@ -44,6 +45,16 @@ class Home extends CI_Controller
             'title' => "Company Profile Aguaria",
             'sejarah' => $this->m_sejarah->detail(),
             'isi' => 'sejarah',
+
+        );
+        $this->load->view('template/wrapper', $data, FALSE);
+    }
+    public function organisasi()
+    {
+        $data = array(
+            'title' => "Company Profile Aguaria",
+            'organisasi' => $this->m_organisasi->detail(),
+            'isi' => 'organisasi',
 
         );
         $this->load->view('template/wrapper', $data, FALSE);

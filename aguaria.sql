@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Mar 10, 2022 at 02:08 AM
+-- Generation Time: Mar 12, 2022 at 06:16 AM
 -- Server version: 10.4.22-MariaDB
 -- PHP Version: 7.4.27
 
@@ -164,7 +164,7 @@ CREATE TABLE `informasi` (
 --
 
 INSERT INTO `informasi` (`id_informasi`, `nama_perusahaan`, `alamat_perusahaan`, `no_telepon_perusahaan`, `email_perusahaan`) VALUES
-(1, 'PT. Tirta Empat Satu Berkah', 'Jl. Bimasakti Raya RT. 06 RW.01, Kelurahan Keji, Kab. Semarang', '(024) 7691 4673', 'tirta41berkah@gmail.com');
+(1, 'PT. Tirta Empat Satu Berkah', 'Jl. Bimasakti Raya RT. 06 RW.01, Kel. Keji, Kec. Ungaran Barat, Kab. Semarang', '(024) 7691 4673', 'tirta41berkah@gmail.com');
 
 -- --------------------------------------------------------
 
@@ -186,6 +186,26 @@ CREATE TABLE `karir` (
 INSERT INTO `karir` (`id_karir`, `judul_karir`, `deskripsi_karir`, `kriteria_karir`) VALUES
 (7, 'Admin Operasional', '<p><u>Deskripsi Pekerjaan</u> :</p>\r\n\r\n<ol>\r\n	<li>Melakukan seluruh tugas administrasi.</li>\r\n	<li>Bertanggung jawab dalam melakukan pendataan secara berkala.</li>\r\n	<li>Bertanggung jawab atas tugas operasional harian perusahaan.</li>\r\n</ol>\r\n', '<p><u>Persyaratan</u> :</p>\r\n\r\n<ol>\r\n	<li>Diutamakan memiliki pengalaman kerja dibidang yang sama minimal satu (1) tahun.</li>\r\n	<li>Fasih menggunakan komputer, internet dan juga menguasai Ms.Office.</li>\r\n	<li>Memiliki keahlian dalam berkomunikasi dengan baik.</li>\r\n	<li>Jujur dan bertanggung jawab</li>\r\n</ol>\r\n'),
 (8, 'Sales Officer', '<p><u>Deskripsi</u> :</p>\r\n\r\n<ol>\r\n	<li>Membuat simulasi kredit dan melakukan negosiasi.</li>\r\n	<li>Menjalankan aktivitas penunjang penjuualan untuk meningkatkan pencapaian sales.</li>\r\n	<li>Memberikan pelayanan kepada pelanggan sesuai dengan standar service perusahaan</li>\r\n</ol>\r\n', '<p><u>Kualifikasi</u> :</p>\r\n\r\n<ol>\r\n	<li>Minimal Pendidikan D3, semua jurusan.</li>\r\n	<li>Pengalaman minimal 1 Tahun.</li>\r\n	<li>IPK Minimal 3.00.</li>\r\n	<li>Memiliki SIM C/A.</li>\r\n	<li>Penempatan di Semarang.</li>\r\n</ol>\r\n\r\n<p>&nbsp;</p>\r\n');
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `organisasi`
+--
+
+CREATE TABLE `organisasi` (
+  `id_organisasi` int(11) NOT NULL,
+  `judul_organisasi` varchar(255) NOT NULL,
+  `isi_organisasi` text NOT NULL,
+  `foto_organisasi` varchar(50) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+
+--
+-- Dumping data for table `organisasi`
+--
+
+INSERT INTO `organisasi` (`id_organisasi`, `judul_organisasi`, `isi_organisasi`, `foto_organisasi`) VALUES
+(1, 'Organisasi Aguaria', '<p>Lalalldskddja</p>\r\n', 'aspadin_logo.jpg');
 
 -- --------------------------------------------------------
 
@@ -232,16 +252,16 @@ CREATE TABLE `proses` (
 --
 
 INSERT INTO `proses` (`id_proses`, `nama_proses`, `keterangan`, `foto_proses`) VALUES
-(1, 'Sumber Mata Air ', '<p>AGUARIA berasal dari sumber air mata air yang terpilih dan dijaga hingga ke tangan konsumen.</p>\r\n', 'Sumber.jpg'),
-(2, ' Tangki Spiral', '<p>Merupakan tempat penampungan sementara sumber mata air sebelum diproses di tahap selanjutnya.&nbsp;</p>\r\n', 'Tangki_Spiral.jpg'),
-(3, 'Filtrasi dengan Filter Bag', '<p>Filter Bag berguna untuk melakukan penyaringan pada padatan dengan ukuran yang besar.</p>\r\n', 'Filter_Bag.jpg'),
-(4, 'Filtrasi dengan Carbon Filter', '<p>Pada Carbon Filter terdapat Strainer, Karbon Aktif, dan juga Sand. Strainer berguna untuk menyaring karbon yang berukuran besar, Karbon Aktif berguna untuk menyerap rasa, bau, warna dan menghilangkan klorin pada air. Sedangkan untuk Sand berguna untuk menahan Karbon Aktif agar tidak terbuang.</p>\r\n', 'Carbon_Filter.jpg'),
-(6, 'Reverse Osmosis', '<p>Pada proses ini hanya dilakukan khusus pada produk AGUARIA De Mineral. Pada proses ini terjadi proses penyaringan yang dapat menyaring zat-zat yang tidak digunakan. Disamping itu RO dapat mengikat mineral yang tidak dibutuhkan. Sehingga baik dikonsumsi bagi penyidap penyakit tertentu.</p>\r\n', 'RO1.jpg'),
-(7, 'Filtrasi dengan Filter Mikron', '<p>Filter Micron ini berkurang 30 inch dengan 3 housing, dimana setiap housingnya terdapat 5 filter catridge yang berfungsi untuk proses penyaringan atau filtrasi.</p>\r\n', 'Filter_Mikron.jpg'),
-(8, 'Ozonisasi di Tangki Reaksi', '<p>Ozonisasi yaitu desinfeksi atau sterilisasi air minum. Teknologi ini sangat efektif dalam menghancukan kuman, bakteri, dan zat organik lainya. Pada proses ini secara tidak langsung jga menambah kadar Oksigen didalamnya. Sehingga air akan lebih segar dan menyehatkan.</p>\r\n', '2022-02-26_10_15_24_1.jpg'),
-(9, 'Tangki Grafity', '<p>Tahap ini merupakan tahap penampungan akhir air minum sebelum akhirnya di kemas kedalam botol dan didistribusikan.</p>\r\n', 'Tangki_Grafity1.jpg'),
-(10, 'Filling Cup & Botol', '<p>Pada tahap ini merupakan pengisian air minum kedalam botol dan cup.</p>\r\n', 'Filling_Smallpack1.png'),
-(11, 'Coding', '<p>Coding merupakan tahap dimana produk yang sudah jadi diberikan kode produksi dan tanggal expired.</p>\r\n', 'Coding.png');
+(1, 'Sumber Mata Air ', '<p>Aguaria berasal dari sumber mata air pegunungan terpilih.</p>\r\n', 'Sumber.jpg'),
+(2, 'Proses Penampungan Sementara', '<p>Sebelum di lakukannya rangkaian proses pengolahan mata iar, yang pertama kali di lakukan adalah menampung air sementara pada Tangki Spiral.</p>\r\n', 'Tangki_Spiral.jpg'),
+(3, 'Proses Filtrasi dengan Filter Bag', '<p>Proses ini berguna untuk melakukan penyaringan pada padatan yang berukuran besar.</p>\r\n', 'Filter_Bag.jpg'),
+(4, 'Proses Filtrasi dengan Carbon Filter', '<p>Di dalam Carbon Filter terdapat 3 komponen penting dalam proses filtrasi, di antaranya ialah Strainer, Karbon Aktif dan Sand.&nbsp;<span style=\"color:#2980b9\">Strainer</span> berfungsi untuk menyating karbon yang berukuran besar. <span style=\"color:#2980b9\">Karbon Aktif</span> berfungsi untuk menyerap rasa, bau, warna dan menghilangkan klorin didalam air.&nbsp;Sedangkan <span style=\"color:#2980b9\">Sand</span> berguna untuk menahan Karbon Aktif agar tidak terbuang.</p>\r\n', 'Carbon_Filter.jpg'),
+(6, 'Proses Reverse Osmosis (RO)', '<p>Proses ini hanya di lakukan pada produk Aguaria De Mineral. Berfungsi untuk melepaskan mineral sehingga di hasilkan air murni dengan nilai jumlah zat padat terlarut atau Total Dissolve Solid (TDS) kurang dari 10ppm.</p>\r\n', 'RO1.jpg'),
+(7, 'Proses Filtrasi dengan Filter Micron', '<p>Filter Micron merupakan tabung yang berukuran 30 inch dan 20 inch dengan masing-masing memiliki 5 filter catridge didalamnya. Berguna untuk proses penyaringan.</p>\r\n', 'Filter_Mikron.jpg'),
+(8, 'Proses Ozonisasi', '<p>Merupakan prosesn desinfeksi atau sterilisasi air minum. Teknologi ini sangat efektif untuk menghancurkan kuman, bakter dan zat organik lainnya. Pada proses ini juga berguna untuk menambahkan kadar oksigen agar air lebih segar dan menyehatkan.</p>\r\n', '2022-02-26_10_15_24_1.jpg'),
+(9, 'Penampungan Air Terakhir', '<p>Proses ini berada pada Tangki Reaksi yang berguna untuk menampung air yang siap untuk di konsumsi sebelum di masukan ke dalam kemasan.</p>\r\n', 'Tangki_Grafity1.jpg'),
+(10, 'Proses Filling Cup & Bottle', '<p>Di tahap ini merupakan pengisian air minum ke dalam kemasan cup (gelas) dan bottle (botol).</p>\r\n', 'Filling_Smallpack1.png'),
+(11, 'Proses Coding', '<p>Merupakan tahap di mana pemberian kode produksi ke produk jadi.</p>\r\n', 'Coding.png');
 
 -- --------------------------------------------------------
 
@@ -261,14 +281,14 @@ CREATE TABLE `proses_g` (
 --
 
 INSERT INTO `proses_g` (`id_prosesg`, `nama_prosesg`, `keterangan`, `foto_prosesg`) VALUES
-(3, 'Sumber Mata Air', '<p>AGUARIA berasal dari sumber air mata air yang terpilih dan dijaga hingga ke tangan konsumen.</p>\r\n', 'Sumber.jpg'),
-(4, 'Unit Valve and Filter', '<p>Merupakan jenis penyaring permanen. Unit Valve and Filter berfungsi untuk melakukan filtrasi tahap awal.</p>\r\n', 'Valve1.jpg'),
-(5, 'Ultra Violet', '<p>Merupakan proses pembunuhan kuman serta bakteri tanpa mempengaruhi warna dan bau dari air.</p>\r\n', 'UV.png'),
-(6, 'Ultra Filtrasi', '<p>Proses ini berfungsi untuk menyaring padatan terlarut dan molekul-molekul besar. Sehingga akan dihasilkan air yang berkualitas. Proses ini jga berfungsi sebagai desinfektan penyaring virus.</p>\r\n', '2022-02-26_10_15_50_1.jpg'),
-(7, 'Mixing', '<p>Pada proses ini terjadi ozonisasi yaitu pencampuran air dengan ozon.</p>\r\n', '2022-02-26_10_21_49_1.jpg'),
-(8, 'Buffer Tank', '<p>Setelah segala proses dilakukan, maka air ditampung sementara untuk menuju kepada proses filling kedalam galon.</p>\r\n', 'Buffer_Tank.jpg'),
-(9, 'Washer', '<p>Sebelum dilakukan proses filling, Galon harus dibersihkan dengan beberapa step yaitu pembersihan galon bagian luar, pembersihan galon bagiam dalam, prewash (pembersihan bagian dalam dan luar).</p>\r\n', 'Washer_Galon.png'),
-(10, 'Proses Filling Galon', '<p>Merupakan proses pengisian air kedalam galon bersih yang sudah melewati proses pencucian.</p>\r\n', 'Filling_Galon.png');
+(3, 'Sumber Mata Air', '<p>Aguaria berasal dari sumber mata air pegunungan terpilih.</p>\r\n', 'Sumber.jpg'),
+(4, 'Proses Filtrasi dengan Unit VAF', '<p>Unit VAF (Valve and Filter) merupakan jenis penyaringan permanen yang berfungsi sebagai penyaring tahap awal.</p>\r\n', 'Valve1.jpg'),
+(5, 'Proses Ultra Violet', '<p>Merupakan proses desinfeksi atau sterilisasi air minum. Ultra Violet berfungsi untuk membunuh bakteri, virus dan bakteri.</p>\r\n', 'UV.png'),
+(6, 'Proses Filtrasi dengan Ultra Filtrasi', '<p>Proses ini berfungsi untuk menyaring microba dengan skala yang kecil. Sehingga akan dihasilkan air yang berkualitas.&nbsp;</p>\r\n', '2022-02-26_10_15_50_1.jpg'),
+(7, 'Proses Mixing', '<p>Merupakan proses di mana terjadi pencampuran air minum dengan ozon. Sehingga air terasa lebih segar dan menyehatkan.</p>\r\n', '2022-02-26_10_21_49_1.jpg'),
+(8, 'Penampungan Air Terakhir', '<p>Proses ini berada pada Tangki Buffer yang berguna untuk menampung air yang siap untuk di konsumsi sebelum di masukan ke dalam galon.</p>\r\n', 'Buffer_Tank.jpg'),
+(9, 'Proses Pembersihan Galon Kosong', '<p>Sebelum di lakukan proses filling, galon di bersihkan dengan beberapa tahapan yaitu External Brusher, External Rinser, Prewash, Washer. Tahap External Brusher berguna untuk pembersihan kotoran pada galon bagian luar. Tahap External Rinser berguna untuk penghilangan sisa koding pada galon. Prewash berguna untuk memberikan bagian dalam dan luar dengan menggunakan desinfektan. Sedangkan tahap Washer berfungsi untuk pembersihan galon bagian dalam untuk memastikan bagian dalam galon bersih.</p>\r\n', 'Washer_Galon.png'),
+(10, 'Proses Filling Galon', '<p>Di tahap ini merupakan pengisian air minum ke dalam galon.</p>\r\n', 'Filling_Galon.png');
 
 -- --------------------------------------------------------
 
@@ -431,6 +451,12 @@ ALTER TABLE `karir`
   ADD PRIMARY KEY (`id_karir`);
 
 --
+-- Indexes for table `organisasi`
+--
+ALTER TABLE `organisasi`
+  ADD PRIMARY KEY (`id_organisasi`);
+
+--
 -- Indexes for table `produk`
 --
 ALTER TABLE `produk`
@@ -465,6 +491,16 @@ ALTER TABLE `slider`
 --
 ALTER TABLE `tentang`
   ADD PRIMARY KEY (`id_tentang`);
+
+--
+-- AUTO_INCREMENT for dumped tables
+--
+
+--
+-- AUTO_INCREMENT for table `organisasi`
+--
+ALTER TABLE `organisasi`
+  MODIFY `id_organisasi` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;

@@ -34,6 +34,12 @@ class M_home extends CI_Model
         $this->db->from('sejarah');
         return $this->db->get()->result();
     }
+    public function organisasi()
+    {
+        $this->db->select('*');
+        $this->db->from('organisasi');
+        return $this->db->get()->result();
+    }
     public function tentang()
     {
         $this->db->select('*');

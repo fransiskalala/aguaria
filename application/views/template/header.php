@@ -53,6 +53,7 @@
 							<li><a <?= $this->uri->segment(2) == 'sejarah' ? 'class="active"' : '' ?> href="<?= base_url("home/sejarah"); ?>">SEJARAH</a></li>
 							<li><a <?= $this->uri->segment(2) == 'visimisi' ? 'class="active"' : '' ?>href="<?= base_url("home/visimisi"); ?>">VISI & MISI</a></li>
 							<li><a <?= $this->uri->segment(2) == 'tentang' ? 'class="active"' : '' ?>href="<?= base_url("home/tentang"); ?>">TENTANG AGUARIA</a></li>
+							<li><a <?= $this->uri->segment(2) == 'organisasi' ? 'class="active"' : '' ?>href="<?= base_url("home/organisasi"); ?>">ORGANISASI</a></li>
 						</ul>
 					</li>
 					<li><a <?= $this->uri->segment(2) == 'proses' && $this->uri->segment(1) == 'home' ? 'class="active"' : '' ?> href="<?= base_url("home/proses"); ?>">PROSES PRODUKSI</a></li>
