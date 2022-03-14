@@ -52,7 +52,7 @@
                                         <td><?= wordwrap($value->isi_berita, 30, "<br>") ?></td>
 
                                         <td><img src="<?= $value->gambar_berita != null ? base_url('gambar_berita/' . $value->gambar_berita) : base_url('images/NIA.png') ?>" width="100px" height="100px"></td>
-                                        <td><?= $value->created_at ?></td>
+                                        <td><?= date('d F Y | H:i', strtotime($value->created_at)) ?></td>
                                         <td><?= $value->id == 1 ? 'Admin' : 'User'; ?></td>
 
                                         <td class="text-center">

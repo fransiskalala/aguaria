@@ -2,7 +2,7 @@
   <section id="banner">
     <div class="carousel-inner">
       <div class="carousel-item active">
-        <img src="<?php echo base_url(); ?>images/HEADER-CREATE9.png"  class="d-block w-100" alt="...">
+        <img src="<?php echo base_url(); ?>images/HEADER-CREATE9.png" class="d-block w-100" alt="...">
         <div class="carousel-caption d-none d-md-block">
         </div>
       </div>
@@ -33,7 +33,7 @@
                   <div class="entry-meta">
                     <ul>
                       <li class="d-flex align-items-center"><i class="bi bi-person"></i><a><?= $value->nama ?></a></li>
-                      <li class="d-flex align-items-center"><i class="bi bi-clock"></i><a><time datetime="2020-01-01"><?= $value->created_at ?></time></a></li>
+                      <li class="d-flex align-items-center"><i class="bi bi-clock"></i><a><time datetime="2020-01-01"><?= date('d F Y | H:i', strtotime($value->created_at)) ?></time></a></li>
                     </ul>
                   </div>
 
