@@ -134,7 +134,8 @@ class Galeri extends CI_Controller
 
     public function add_foto($id_galeri)
     {
-        $this->form_validation->set_rules('id_galeri', 'ID Galeri', 'required');
+        // $this->form_validation->set_rules('id_galeri', 'ID Galeri', 'required');
+        $this->form_validation->set_rules('keterangan_foto', 'Keterangan Foto', 'required');
 
         if ($this->form_validation->run() == TRUE) {
             $config['upload_path']      = './foto_galeri/';

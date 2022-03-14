@@ -32,6 +32,10 @@
 	<link href="<?= base_url() ?>frontend/assets/css/gallery/compact-gallery.css" rel="stylesheet" />
 	<link href="<?= base_url() ?>frontend/assets/css/gallery/cards-gallery.css" rel="stylesheet" />
 	<link href="<?= base_url() ?>frontend/assets/fonts/stylesheet.css" rel="stylesheet">
+	<link rel="stylesheet" type="text/css" href="<?= base_url() ?>frontend/assets/css/mygallerybox/mygallery.css"/>
+
+	<script type="text/javascript" src="js/jquery-2.1.3.min.js"></script>
+<script type="text/javascript" src="js/mygallery.js"></script>
 
 </head>
 

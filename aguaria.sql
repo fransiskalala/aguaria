@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Mar 13, 2022 at 05:01 PM
+-- Generation Time: Mar 14, 2022 at 09:30 AM
 -- Server version: 10.4.22-MariaDB
 -- PHP Version: 7.4.27
 
@@ -112,9 +112,9 @@ CREATE TABLE `galeri` (
 --
 
 INSERT INTO `galeri` (`id_galeri`, `caption_galeri`, `sampul_galeri`, `tgl_dibuat`) VALUES
-(7, 'Penanaman Bibit Pohon dan Konservasi Sumber Mata Air Desa Keji', 'Konservasi_Sumber_Mata_Air_Desa_Keji1.JPG', '2022-03-10 00:53:38'),
-(8, 'Factory Visit SMK Nusa Putera', 'Factory_Visit_Dari_SMK_Nusput.jpg', '2022-03-09 04:47:03'),
-(9, 'Bantuan Bakti Sosial di Beberapa Sektor', 'Penyerahan_Bantuan_Beras.JPG', '2022-03-09 04:47:29');
+(1, 'Distribusi Bantuan Sosial di Beberapa Sektor', 'Penyerahan_Bantuan_Beras.png', '2022-03-14 02:34:57'),
+(2, 'Factory Visit SMK Nusa Putera', 'Factory_Visit_Dari_SMK_Nusput.png', '2022-03-14 02:45:34'),
+(3, 'Kegiatan Konservasi Sumber Mata Air dan Penanaman Bibit Pohon', 'Konservasi_Sumber_Mata_Air_Desa_Keji.png', '2022-03-14 02:47:30');
 
 -- --------------------------------------------------------
 
@@ -134,18 +134,17 @@ CREATE TABLE `galeri_foto` (
 --
 
 INSERT INTO `galeri_foto` (`id_foto`, `id_galeri`, `keterangan_foto`, `foto_galeri`) VALUES
-(0, 9, 'fafafa', 'Dr__Strange.jpg'),
-(28, 7, '', 'Penyerahan_dan_Penanaman_Bibit_di_lereng_Gunung_Ungaran1.jpg'),
-(29, 7, '', 'Konservasi_Sumber_Mata_Air_Desa_Keji11.JPG'),
-(30, 7, '', 'Penanaman_di_area_sumber_mata_air1.jpg'),
-(31, 7, '', 'Konservasi_Sumber_Mata_Air_Desa_Keji2.JPG'),
-(32, 8, '', 'Factory_Visit_SMK_Nusput1.jpg'),
-(33, 9, 'verervergrvgereeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeee', 'Bantua_Kegiatan_Baksos_SMA_Bina_Amal1.jpg'),
-(34, 9, '', 'Penyerahan_Bantuan_Bakti_Sosial1.jpg'),
-(35, 9, '', 'Penyaluran_Air_Bersih_Desa_Keji1.jpg'),
-(36, 9, '', 'Penyerahan_Bantuan_Banjir_Grobogan1.jpg'),
-(37, 9, '', 'Penyerahan_Bantuan_Beras_Kepada_Karyawan1.jpeg'),
-(38, 9, '', 'Penyerahan_Bantuan_Beras1.JPG');
+(1, 1, 'Penyerahan Bantuan Beras Kepada Karyawan Aguaria', 'Penyerahan_Bantuan_Beras_Kepada_Karyawan.png'),
+(2, 1, 'Penyerahan Bantuan Banjir Grobogan', 'Penyerahan_Bantuan_Banjir_Grobogan.png'),
+(3, 1, 'Penyerahan Bantuan Bakti Sosial', 'Penyerahan_Bantuan_Bakti_Sosial.png'),
+(4, 1, 'Penyaluran Air Bersih Desa Keji', 'Penyaluran_Air_Bersih_Desa_Keji.png'),
+(5, 1, 'Bantuan Kegiatan Bakti Sosial SMA Bina Amal', 'Bantua_Kegiatan_Baksos_SMA_Bina_Amal.png'),
+(6, 1, 'Penyerahan Bantuan Beras', 'Penyerahan_Bantuan_Beras.png'),
+(7, 2, 'Factory Visit SMK Nusa Putera ', 'Factory_Visit_SMK_Nusput.png'),
+(8, 3, 'Penyerahan dan Penanaman Bibit di Lereng Gunung Ungaran', 'Penyerahan_dan_Penanaman_Bibit_di_lereng_Gunung_Ungaran.png'),
+(9, 3, 'Penanaman di Area Sumber Mata Air', 'Penanaman_di_area_sumber_mata_air.png'),
+(10, 3, 'Konservasi Sumber Mata Air di Desa Keji', 'Konservasi_Sumber_Mata_Air_Desa_Keji1.png'),
+(12, 3, 'Konservasi Sumber Mata Air di Desa Keji', 'Konservasi_Sumber_Mata_Air_Desa_Keji.png');
 
 -- --------------------------------------------------------
 
@@ -497,6 +496,18 @@ ALTER TABLE `tentang`
 --
 -- AUTO_INCREMENT for dumped tables
 --
+
+--
+-- AUTO_INCREMENT for table `galeri`
+--
+ALTER TABLE `galeri`
+  MODIFY `id_galeri` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=4;
+
+--
+-- AUTO_INCREMENT for table `galeri_foto`
+--
+ALTER TABLE `galeri_foto`
+  MODIFY `id_foto` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=13;
 
 --
 -- AUTO_INCREMENT for table `organisasi`
