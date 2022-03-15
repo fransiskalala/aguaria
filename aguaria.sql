@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Mar 14, 2022 at 07:36 PM
+-- Generation Time: Mar 15, 2022 at 08:59 AM
 -- Server version: 10.4.22-MariaDB
 -- PHP Version: 7.4.27
 
@@ -206,7 +206,7 @@ CREATE TABLE `organisasi` (
 --
 
 INSERT INTO `organisasi` (`id_organisasi`, `judul_organisasi`, `isi_organisasi`, `foto_organisasi`) VALUES
-(1, 'Organisasi Aguaria', '<p>Lalalldskddja</p>\r\n', 'aspadin_logo.jpg');
+(1, 'Organisasi Aguaria', '<p>Aguaria bersama Aspadin bekerja sama untuk menciptakan lingkungan yang terjaga dengan melakukan berbagai kegiatan penanggulangan alam seperti penanaman bibit pohon di lereng Gunung Ungaran, Konservasi sumber mata air dan sebagainya.</p>\r\n', 'aspadin_logo.jpg');
 
 -- --------------------------------------------------------
 
