@@ -5,7 +5,8 @@
         <nav>
             <ol class="breadcrumb">
                 <li class="breadcrumb-item"><a href="<?= base_url('user') ?>">Home</a></li>
-                <li class="breadcrumb-item active">Kelola Proses Produksi Smallpack</li>
+				<li class="breadcrumb-item"><a href="<?= base_url('proses') ?>">Kelola Proses Produksi Smallpack</a></li>
+                <li class="breadcrumb-item active">Edit Proses Produksi Smallpack</li>
             </ol>
         </nav>
     </div><!-- End Page Title -->

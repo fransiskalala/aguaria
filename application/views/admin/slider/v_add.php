@@ -5,7 +5,8 @@
         <nav>
             <ol class="breadcrumb">
                 <li class="breadcrumb-item"><a href="<?= base_url('user') ?>">Home</a></li>
-                <li class="breadcrumb-item active">Kelola Slider</li>
+				<li class="breadcrumb-item"><a href="<?= base_url('slider') ?>">Kelola Slider</a></li>
+                <li class="breadcrumb-item active">Add Slider</li>
             </ol>
         </nav>
     </div><!-- End Page Title -->

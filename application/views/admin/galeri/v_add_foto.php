@@ -5,7 +5,8 @@
         <nav>
             <ol class="breadcrumb">
                 <li class="breadcrumb-item"><a href="<?= base_url('user') ?>">Home</a></li>
-                <li class="breadcrumb-item active">Kelola Galeri</li>
+				<li class="breadcrumb-item"><a href="<?= base_url('galeri') ?>">Kelola Galeri</a></li>
+                <li class="breadcrumb-item active">Add Foto Galeri</li>
             </ol>
         </nav>
         <section class="section">

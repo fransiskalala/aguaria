@@ -5,7 +5,8 @@
         <nav>
             <ol class="breadcrumb">
                 <li class="breadcrumb-item"><a href="<?= base_url('user') ?>">Home</a></li>
-                <li class="breadcrumb-item active">Kelola Produk</li>
+				<li class="breadcrumb-item"><a href="<?= base_url('produk') ?>">Kelola Produk</a></li>
+                <li class="breadcrumb-item active">Edit Produk</li>
             </ol>
         </nav>
     </div><!-- End Page Title -->

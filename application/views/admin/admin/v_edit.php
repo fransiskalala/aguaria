@@ -5,7 +5,8 @@
         <nav>
             <ol class="breadcrumb">
                 <li class="breadcrumb-item"><a href="<?= base_url('user') ?>">Home</a></li>
-                <li class="breadcrumb-item active">Kelola Admin</li>
+				<li class="breadcrumb-item"><a href="<?= base_url('admin') ?>">Kelola Admin</a></li>
+                <li class="breadcrumb-item active">Edit Admin</li>
             </ol>
         </nav>
 

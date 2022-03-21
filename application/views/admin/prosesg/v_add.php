@@ -5,7 +5,8 @@
         <nav>
             <ol class="breadcrumb">
                 <li class="breadcrumb-item"><a href="<?= base_url('user') ?>">Home</a></li>
-                <li class="breadcrumb-item active">Kelola Proses Produksi Galon</li>
+				<li class="breadcrumb-item"><a href="<?= base_url('prosesg') ?>">Kelola Proses Produksi Galon</a></li>
+                <li class="breadcrumb-item active">Add Proses Produksi Galon</li>
             </ol>
         </nav>
     </div><!-- End Page Title -->
