@@ -2,10 +2,10 @@
 -- version 5.1.1
 -- https://www.phpmyadmin.net/
 --
--- Host: localhost:3306
--- Generation Time: Mar 21, 2022 at 08:52 AM
--- Server version: 5.7.37
--- PHP Version: 7.4.28
+-- Host: 127.0.0.1
+-- Generation Time: Mar 21, 2022 at 06:15 PM
+-- Server version: 10.4.22-MariaDB
+-- PHP Version: 7.4.27
 
 SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
 START TRANSACTION;
@@ -33,7 +33,7 @@ CREATE TABLE `berita` (
   `slug` varchar(255) NOT NULL,
   `isi_berita` text NOT NULL,
   `id` varchar(255) NOT NULL,
-  `created_at` timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP,
+  `created_at` timestamp NOT NULL DEFAULT current_timestamp() ON UPDATE current_timestamp(),
   `gambar_berita` varchar(255) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
@@ -104,7 +104,7 @@ CREATE TABLE `galeri` (
   `id_galeri` int(11) NOT NULL,
   `caption_galeri` varchar(255) NOT NULL,
   `sampul_galeri` varchar(255) NOT NULL,
-  `tgl_dibuat` timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP
+  `tgl_dibuat` timestamp NOT NULL DEFAULT current_timestamp() ON UPDATE current_timestamp()
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
 --
@@ -259,7 +259,7 @@ INSERT INTO `proses` (`id_proses`, `nama_proses`, `keterangan`, `foto_proses`) V
 (6, 'Proses Filtrasi dengan Ultra Filtrasi', '<p>Merupakan proses penyaringan menggunakan membran dengan ukuran pori sebesar 0.1 mikro yang berguna untuk menyaring partikel dan mikroba dengan skala yang kecil.</p>\r\n', '2022-02-26_10_15_50_1.jpg'),
 (7, 'Proses Mixing', '<p>Merupakan proses di mana terjadi pencampuran air minum dengan ozon. Sehingga air terasa lebih segar dan menyehatkan.</p>\r\n', '2022-02-26_10_21_49_1.jpg'),
 (8, 'Tangki Buffer', '<p>Merupakan tempat penampungan air yang siap untuk dikonsumsi sebelum dimasukan ke dalam kemasan.</p>\r\n', 'Buffer_Tank.jpg'),
-(10, 'Proses Filling', '<p>Merupakan proses pengisian air minum ke dalam kemasan.</p>\r\n', 'Filling_Galon.png'),
+(10, 'Proses Filling', '<p>Merupakan proses pengisian air minum ke dalam kemasan.</p>\r\n', 'Filling_Smallpack1.png'),
 (11, 'Proses Coding', '<p>Merupakan proses pemberian kode produksi pada kemasan.</p>\r\n', 'Coding.png');
 
 -- --------------------------------------------------------
@@ -331,9 +331,16 @@ CREATE TABLE `slider` (
 INSERT INTO `slider` (`id_slider`, `nama_slider`, `foto_slider`, `menu`) VALUES
 (2, 'Slider Home 1', 'Header-1edit.png', 'Home'),
 (3, 'Slider Home 2', 'HEADER-CREATE1.jpg', 'Home'),
-(4, 'Sejarah', 'HEADER-CREATE5.jpg', 'Sejarah'),
+(4, 'Sejarah', 'HEADER-CREATE9.png', 'Sejarah'),
 (5, 'Visi & Misi', 'HEADER-CREATE4.jpg', 'Visi & Misi'),
-(6, 'Berita', 'HEADER-CREATE7.jpg', 'Berita');
+(6, 'Berita', 'HEADER-CREATE7.jpg', 'Berita'),
+(7, 'TentangAguaria', 'HEADER-CREATE5.jpg', 'Tentang'),
+(8, 'Organisasi', 'HEADER-CREATE11.jpg', 'Organisasi'),
+(9, 'Proses Produksi', 'HEADER-CREATE101.jpg', 'Proses'),
+(10, 'Produk', 'HEADER-CREATE63.png', 'Produk'),
+(11, 'Galeri', 'HEADER-CREATE12.jpg', 'Galeri'),
+(12, 'Karir', 'HEADER-CREATE13.jpg', 'Karir'),
+(13, 'Hubungi Kami', 'HEADER-CREATE8.jpg', 'Hubungi Kami');
 
 -- --------------------------------------------------------
 
@@ -577,7 +584,7 @@ ALTER TABLE `proses_g`
 -- AUTO_INCREMENT for table `slider`
 --
 ALTER TABLE `slider`
-  MODIFY `id_slider` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=7;
+  MODIFY `id_slider` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=14;
 
 --
 -- AUTO_INCREMENT for table `user`

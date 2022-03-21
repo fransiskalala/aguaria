@@ -67,8 +67,7 @@ class Home extends CI_Controller
         $data = array(
             'title' => "Company Profile Aguaria",
             'proses' => $this->m_home->proses(),
-            'prosesg' => $this->m_home->prosesg(),
-			'slider'  => $this->m_home->slider_organisasi(),
+        	'slider'  => $this->m_home->slider_proses(),
             'isi' => 'proses',
 
         );
