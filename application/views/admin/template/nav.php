@@ -50,6 +50,13 @@
  		</li>
 
  		<li class="nav-item">
+ 			<a <?= $this->uri->segment(1) == 'proses' ? 'class="nav-link active"' : '' ?> class="nav-link collapsed" href="<?= base_url('proses') ?>">
+ 				<i class="bi bi-gear"></i>
+ 				<span>Proses Produksi</span>
+ 			</a>
+ 		</li>
+
+ 		<!-- <li class="nav-item">
  			<a <?= $this->uri->segment(1) == 'proses' || $this->uri->segment(1) == 'prosesg' ? 'class="nav-link"' : '' ?> class="nav-link collapsed" data-bs-target="#proses-nav" data-bs-toggle="collapse" href="#" aria-expanded="true">
  				<i class="bi bi-menu-button-wide"></i><span>Proses</span><i class="bi bi-chevron-down ms-auto"></i>
  			</a>
@@ -67,7 +74,7 @@
  					</a>
  				</li>
  			</ul>
- 		</li>
+ 		</li> -->
 
  		<li class="nav-item">
  			<a <?= $this->uri->segment(1) == 'berita' ? 'class="nav-link active"' : '' ?> class="nav-link collapsed" href="<?= base_url('berita') ?>">

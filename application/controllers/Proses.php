@@ -18,7 +18,7 @@ class Proses extends CI_Controller {
     {
         $data = array(
             'title'     => 'Company Profile Aguaria',
-            'title2'    => 'Proses Produksi',
+            'title2'    => 'Proses Produksi Galon',
             'proses'    => $this->m_proses->lists(),
             'isi'       => 'admin/proses/v_list'
         );
@@ -33,12 +33,12 @@ class Proses extends CI_Controller {
         if ($this->form_validation->run() == TRUE) {
             $config['upload_path']      = './foto_proses/';
             $config['allowed_types']    = 'gif|jpg|png|jpeg';
-            $config['max_size']         = '2000000000000';
+            $config['max_size']         = '20000';
             $this->upload->initialize($config);
             if (!$this->upload->do_upload('foto_proses')) {
                 $data = array(
                     'title' => 'Company Profile Aguaria',
-                    'title2' => 'Add Proses Pembuatan',
+                    'title2' => 'Add Proses Produksi Galon',
                     'error' => $this->upload->display_errors(),
                     'isi'   => 'admin/proses/v_add'
                 );
@@ -55,13 +55,13 @@ class Proses extends CI_Controller {
                     'foto_proses' => $upload_data['uploads']['file_name']
                 );
                 $this->m_proses->add($data);
-                $this->session->set_flashdata('pesan', 'Proses Pembuatan Berhasil Ditambahkan');
+                $this->session->set_flashdata('pesan', 'Proses Produksi Berhasil Ditambahkan');
                 redirect('proses');
             }
         }
         $data = array(
             'title' => 'Company Profile Aguaria',
-            'title2' => 'Add Proses Pembuatan',
+            'title2' => 'Add Proses Produksi Galon',
             'isi'   => 'admin/proses/v_add'
         );
         $this->load->view('admin/template/wrapper', $data, FALSE);
@@ -105,7 +105,7 @@ class Proses extends CI_Controller {
                     'foto_proses' => $upload_data['uploads']['file_name']
                 );
                 $this->m_proses->edit($data);
-                $this->session->set_flashdata('pesan', 'Proses Pembuatan Berhasil Diedit');
+                $this->session->set_flashdata('pesan', 'Proses Produksi Berhasil Diedit');
                 redirect('proses');
             }
 
@@ -116,12 +116,12 @@ class Proses extends CI_Controller {
                 
             );
             $this->m_proses->edit($data);
-            $this->session->set_flashdata('pesan', 'Proses Pembuatan Berhasil Diedit');
+            $this->session->set_flashdata('pesan', 'Proses Produksi Berhasil Diedit');
             redirect('proses');
         }
         $data = array(
             'title' => 'Company Profile Aguaria',
-            'title2' => 'Edit Proses Pembuatan',
+            'title2' => 'Edit Proses Produksi Galon',
             'proses' => $this->m_proses->detail($id_proses),
             'isi'   => 'admin/proses/v_edit'
         );
@@ -136,7 +136,7 @@ class Proses extends CI_Controller {
         }
         $data = array('id_proses' => $id_proses);
         $this->m_proses->hapus($data);
-        $this->session->set_flashdata('pesan', 'Proses Pembuatan Berhasil Dihapus');
+        $this->session->set_flashdata('pesan', 'Proses Produksi Berhasil Dihapus');
         redirect('proses');
     }
 

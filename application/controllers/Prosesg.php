@@ -18,7 +18,7 @@ class Prosesg extends CI_Controller {
     {
         $data = array(
             'title'     => 'Company Profile Aguaria',
-            'title2'    => 'Proses Produksi Galon',
+            'title2'    => 'Proses Produksi',
             'prosesg'    => $this->m_prosesg->lists(),
             'isi'       => 'admin/prosesg/v_list'
         );
@@ -33,12 +33,12 @@ class Prosesg extends CI_Controller {
         if ($this->form_validation->run() == TRUE) {
             $config['upload_path']      = './foto_prosesg/';
             $config['allowed_types']    = 'gif|jpg|png|jpeg';
-            $config['max_size']         = '20000';
+            $config['max_size']         = '2000000000000';
             $this->upload->initialize($config);
             if (!$this->upload->do_upload('foto_prosesg')) {
                 $data = array(
                     'title' => 'Company Profile Aguaria',
-                    'title2' => 'Add Proses Produksi Galon',
+                    'title2' => 'Add Proses Pembuatan',
                     'error' => $this->upload->display_errors(),
                     'isi'   => 'admin/prosesg/v_add'
                 );
@@ -55,13 +55,13 @@ class Prosesg extends CI_Controller {
                     'foto_prosesg' => $upload_data['uploads']['file_name']
                 );
                 $this->m_prosesg->add($data);
-                $this->session->set_flashdata('pesan', 'Proses Produksi Berhasil Ditambahkan');
+                $this->session->set_flashdata('pesan', 'Proses Pembuatan Berhasil Ditambahkan');
                 redirect('prosesg');
             }
         }
         $data = array(
             'title' => 'Company Profile Aguaria',
-            'title2' => 'Add Proses Produksi Galon',
+            'title2' => 'Add Proses Pembuatan',
             'isi'   => 'admin/prosesg/v_add'
         );
         $this->load->view('admin/template/wrapper', $data, FALSE);
@@ -105,7 +105,7 @@ class Prosesg extends CI_Controller {
                     'foto_prosesg' => $upload_data['uploads']['file_name']
                 );
                 $this->m_prosesg->edit($data);
-                $this->session->set_flashdata('pesan', 'Proses Produksi Berhasil Diedit');
+                $this->session->set_flashdata('pesan', 'Proses Pembuatan Berhasil Diedit');
                 redirect('prosesg');
             }
 
@@ -116,12 +116,12 @@ class Prosesg extends CI_Controller {
                 
             );
             $this->m_prosesg->edit($data);
-            $this->session->set_flashdata('pesan', 'Proses Produksi Berhasil Diedit');
+            $this->session->set_flashdata('pesan', 'Proses Pembuatan Berhasil Diedit');
             redirect('prosesg');
         }
         $data = array(
             'title' => 'Company Profile Aguaria',
-            'title2' => 'Edit Proses Produksi Galon',
+            'title2' => 'Edit Proses Pembuatan',
             'prosesg' => $this->m_prosesg->detail($id_prosesg),
             'isi'   => 'admin/prosesg/v_edit'
         );
@@ -136,7 +136,7 @@ class Prosesg extends CI_Controller {
         }
         $data = array('id_prosesg' => $id_prosesg);
         $this->m_prosesg->hapus($data);
-        $this->session->set_flashdata('pesan', 'Proses Produksi Berhasil Dihapus');
+        $this->session->set_flashdata('pesan', 'Proses Pembuatan Berhasil Dihapus');
         redirect('prosesg');
     }
 
