@@ -2,10 +2,10 @@
 -- version 5.1.1
 -- https://www.phpmyadmin.net/
 --
--- Host: 127.0.0.1
--- Generation Time: Mar 19, 2022 at 05:04 AM
--- Server version: 10.4.22-MariaDB
--- PHP Version: 7.4.27
+-- Host: localhost:3306
+-- Generation Time: Mar 21, 2022 at 08:52 AM
+-- Server version: 5.7.37
+-- PHP Version: 7.4.28
 
 SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
 START TRANSACTION;
@@ -33,7 +33,7 @@ CREATE TABLE `berita` (
   `slug` varchar(255) NOT NULL,
   `isi_berita` text NOT NULL,
   `id` varchar(255) NOT NULL,
-  `created_at` timestamp NOT NULL DEFAULT current_timestamp() ON UPDATE current_timestamp(),
+  `created_at` timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP,
   `gambar_berita` varchar(255) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
@@ -104,7 +104,7 @@ CREATE TABLE `galeri` (
   `id_galeri` int(11) NOT NULL,
   `caption_galeri` varchar(255) NOT NULL,
   `sampul_galeri` varchar(255) NOT NULL,
-  `tgl_dibuat` timestamp NOT NULL DEFAULT current_timestamp() ON UPDATE current_timestamp()
+  `tgl_dibuat` timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
 --
@@ -253,16 +253,14 @@ CREATE TABLE `proses` (
 --
 
 INSERT INTO `proses` (`id_proses`, `nama_proses`, `keterangan`, `foto_proses`) VALUES
-(1, 'Sumber Mata Air ', '<p>Aguaria berasal dari sumber mata air pegunungan terpilih.</p>\r\n', 'Sumber.jpg'),
-(2, 'Proses Penampungan Sementara', '<p>Sebelum di lakukannya rangkaian proses pengolahan mata iar, yang pertama kali di lakukan adalah menampung air sementara pada Tangki Spiral.</p>\r\n', 'Tangki_Spiral.jpg'),
-(3, 'Proses Filtrasi dengan Filter Bag', '<p>Proses ini berguna untuk melakukan penyaringan pada padatan yang berukuran besar.</p>\r\n', 'Filter_Bag.jpg'),
-(4, 'Proses Filtrasi dengan Carbon Filter', '<p>Di dalam Carbon Filter terdapat 3 komponen penting dalam proses filtrasi, di antaranya ialah Strainer, Karbon Aktif dan Sand.&nbsp;<span style=\"color:#2980b9\">Strainer</span> berfungsi untuk menyating karbon yang berukuran besar. <span style=\"color:#2980b9\">Karbon Aktif</span> berfungsi untuk menyerap rasa, bau, warna dan menghilangkan klorin didalam air.&nbsp;Sedangkan <span style=\"color:#2980b9\">Sand</span> berguna untuk menahan Karbon Aktif agar tidak terbuang.</p>\r\n', 'Carbon_Filter.jpg'),
-(6, 'Proses Reverse Osmosis (RO)', '<p>Proses ini hanya di lakukan pada produk Aguaria De Mineral. Berfungsi untuk melepaskan mineral sehingga di hasilkan air murni dengan nilai jumlah zat padat terlarut atau Total Dissolve Solid (TDS) kurang dari 10ppm.</p>\r\n', 'RO1.jpg'),
-(7, 'Proses Filtrasi dengan Filter Micron', '<p>Filter Micron merupakan tabung yang berukuran 30 inch dan 20 inch dengan masing-masing memiliki 5 filter catridge didalamnya. Berguna untuk proses penyaringan.</p>\r\n', 'Filter_Mikron.jpg'),
-(8, 'Proses Ozonisasi', '<p>Merupakan prosesn desinfeksi atau sterilisasi air minum. Teknologi ini sangat efektif untuk menghancurkan kuman, bakter dan zat organik lainnya. Pada proses ini juga berguna untuk menambahkan kadar oksigen agar air lebih segar dan menyehatkan.</p>\r\n', '2022-02-26_10_15_24_1.jpg'),
-(9, 'Penampungan Air Terakhir', '<p>Proses ini berada pada Tangki Reaksi yang berguna untuk menampung air yang siap untuk di konsumsi sebelum di masukan ke dalam kemasan.</p>\r\n', 'Tangki_Grafity1.jpg'),
-(10, 'Proses Filling Cup & Bottle', '<p>Di tahap ini merupakan pengisian air minum ke dalam kemasan cup (gelas) dan bottle (botol).</p>\r\n', 'Filling_Smallpack1.png'),
-(11, 'Proses Coding', '<p>Merupakan tahap di mana pemberian kode produksi ke produk jadi.</p>\r\n', 'Coding.png');
+(3, 'Sumber Mata Air', '<p>Aguaria berasal dari sumber mata air pegunungan terpilih.</p>\r\n', 'Sumber.jpg'),
+(4, 'Proses Filtrasi dengan Unit VAF', '<p>Unit VAF (Valve and Filter) merupakan jenis penyaringan permanen yang memiliki ukuran penyaringan sebesar 30-100 mikro yang berfungsi sebagai penyaring endapan padat.</p>\r\n', 'Valve1.jpg'),
+(5, 'Proses Ultra Violet', '<p>Merupakan proses desinfeksi atau sterilisasi air minum. Ultra Violet berfungsi untuk membunuh bakteri, virus dan bakteri.</p>\r\n', 'UV.png'),
+(6, 'Proses Filtrasi dengan Ultra Filtrasi', '<p>Merupakan proses penyaringan menggunakan membran dengan ukuran pori sebesar 0.1 mikro yang berguna untuk menyaring partikel dan mikroba dengan skala yang kecil.</p>\r\n', '2022-02-26_10_15_50_1.jpg'),
+(7, 'Proses Mixing', '<p>Merupakan proses di mana terjadi pencampuran air minum dengan ozon. Sehingga air terasa lebih segar dan menyehatkan.</p>\r\n', '2022-02-26_10_21_49_1.jpg'),
+(8, 'Tangki Buffer', '<p>Merupakan tempat penampungan air yang siap untuk dikonsumsi sebelum dimasukan ke dalam kemasan.</p>\r\n', 'Buffer_Tank.jpg'),
+(10, 'Proses Filling', '<p>Merupakan proses pengisian air minum ke dalam kemasan.</p>\r\n', 'Filling_Galon.png'),
+(11, 'Proses Coding', '<p>Merupakan proses pemberian kode produksi pada kemasan.</p>\r\n', 'Coding.png');
 
 -- --------------------------------------------------------
 
@@ -282,14 +280,16 @@ CREATE TABLE `proses_g` (
 --
 
 INSERT INTO `proses_g` (`id_prosesg`, `nama_prosesg`, `keterangan`, `foto_prosesg`) VALUES
-(3, 'Sumber Mata Air', '<p>Aguaria berasal dari sumber mata air pegunungan terpilih.</p>\r\n', 'Sumber.jpg'),
-(4, 'Proses Filtrasi dengan Unit VAF', '<p>Unit VAF (Valve and Filter) merupakan jenis penyaringan permanen yang memiliki ukuran penyaringan sebesar 30-100 mikro yang berfungsi sebagai penyaring endapan padat.</p>\r\n', 'Valve1.jpg'),
-(5, 'Proses Ultra Violet', '<p>Merupakan proses desinfeksi atau sterilisasi air minum. Ultra Violet berfungsi untuk membunuh bakteri, virus dan bakteri.</p>\r\n', 'UV.png'),
-(6, 'Proses Filtrasi dengan Ultra Filtrasi', '<p>Merupakan proses penyaringan menggunakan membran dengan ukuran pori sebesar 0.1 mikro yang berguna untuk menyaring partikel dan mikroba dengan skala yang kecil.</p>\r\n', '2022-02-26_10_15_50_1.jpg'),
-(7, 'Proses Mixing', '<p>Merupakan proses di mana terjadi pencampuran air minum dengan ozon. Sehingga air terasa lebih segar dan menyehatkan.</p>\r\n', '2022-02-26_10_21_49_1.jpg'),
-(8, 'Tangki Buffer', '<p>Merupakan tempat penampungan air yang siap untuk dikonsumsi sebelum dimasukan ke dalam kemasan.</p>\r\n', 'Buffer_Tank.jpg'),
-(10, 'Proses Filling', '<p>Merupakan proses pengisian air minum ke dalam kemasan.</p>\r\n', 'Filling_Galon.png'),
-(11, 'Proses Coding', '<p>Merupakan proses pemberian kode produksi pada kemasan.</p>\r\n', 'Coding.png');
+(1, 'Sumber Mata Air ', '<p>Aguaria berasal dari sumber mata air pegunungan terpilih.</p>\r\n', 'Sumber.jpg'),
+(2, 'Proses Penampungan Sementara', '<p>Sebelum di lakukannya rangkaian proses pengolahan mata iar, yang pertama kali di lakukan adalah menampung air sementara pada Tangki Spiral.</p>\r\n', 'Tangki_Spiral.jpg'),
+(3, 'Proses Filtrasi dengan Filter Bag', '<p>Proses ini berguna untuk melakukan penyaringan pada padatan yang berukuran besar.</p>\r\n', 'Filter_Bag.jpg'),
+(4, 'Proses Filtrasi dengan Carbon Filter', '<p>Di dalam Carbon Filter terdapat 3 komponen penting dalam proses filtrasi, di antaranya ialah Strainer, Karbon Aktif dan Sand.&nbsp;<span style=\"color:#2980b9\">Strainer</span> berfungsi untuk menyating karbon yang berukuran besar. <span style=\"color:#2980b9\">Karbon Aktif</span> berfungsi untuk menyerap rasa, bau, warna dan menghilangkan klorin didalam air.&nbsp;Sedangkan <span style=\"color:#2980b9\">Sand</span> berguna untuk menahan Karbon Aktif agar tidak terbuang.</p>\r\n', 'Carbon_Filter.jpg'),
+(6, 'Proses Reverse Osmosis (RO)', '<p>Proses ini hanya di lakukan pada produk Aguaria De Mineral. Berfungsi untuk melepaskan mineral sehingga di hasilkan air murni dengan nilai jumlah zat padat terlarut atau Total Dissolve Solid (TDS) kurang dari 10ppm.</p>\r\n', 'RO1.jpg'),
+(7, 'Proses Filtrasi dengan Filter Micron', '<p>Filter Micron merupakan tabung yang berukuran 30 inch dan 20 inch dengan masing-masing memiliki 5 filter catridge didalamnya. Berguna untuk proses penyaringan.</p>\r\n', 'Filter_Mikron.jpg'),
+(8, 'Proses Ozonisasi', '<p>Merupakan prosesn desinfeksi atau sterilisasi air minum. Teknologi ini sangat efektif untuk menghancurkan kuman, bakter dan zat organik lainnya. Pada proses ini juga berguna untuk menambahkan kadar oksigen agar air lebih segar dan menyehatkan.</p>\r\n', '2022-02-26_10_15_24_1.jpg'),
+(9, 'Penampungan Air Terakhir', '<p>Proses ini berada pada Tangki Reaksi yang berguna untuk menampung air yang siap untuk di konsumsi sebelum di masukan ke dalam kemasan.</p>\r\n', 'Tangki_Grafity1.jpg'),
+(10, 'Proses Filling Cup & Bottle', '<p>Di tahap ini merupakan pengisian air minum ke dalam kemasan cup (gelas) dan bottle (botol).</p>\r\n', 'Filling_Smallpack1.png'),
+(11, 'Proses Coding', '<p>Merupakan tahap di mana pemberian kode produksi ke produk jadi.</p>\r\n', 'Coding.png');
 
 -- --------------------------------------------------------
 
@@ -320,16 +320,20 @@ INSERT INTO `sejarah` (`id_sejarah`, `judul_sejarah`, `isi_sejarah`, `foto_sejar
 CREATE TABLE `slider` (
   `id_slider` int(11) NOT NULL,
   `nama_slider` varchar(50) NOT NULL,
-  `foto_slider` varchar(50) NOT NULL
+  `foto_slider` varchar(50) NOT NULL,
+  `menu` varchar(50) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
 --
 -- Dumping data for table `slider`
 --
 
-INSERT INTO `slider` (`id_slider`, `nama_slider`, `foto_slider`) VALUES
-(2, 'Foto1', 'Header-1edit.png'),
-(3, 'Foto 2', 'HEADER-CREATE1.jpg');
+INSERT INTO `slider` (`id_slider`, `nama_slider`, `foto_slider`, `menu`) VALUES
+(2, 'Slider Home 1', 'Header-1edit.png', 'Home'),
+(3, 'Slider Home 2', 'HEADER-CREATE1.jpg', 'Home'),
+(4, 'Sejarah', 'HEADER-CREATE5.jpg', 'Sejarah'),
+(5, 'Visi & Misi', 'HEADER-CREATE4.jpg', 'Visi & Misi'),
+(6, 'Berita', 'HEADER-CREATE7.jpg', 'Berita');
 
 -- --------------------------------------------------------
 
@@ -573,7 +577,7 @@ ALTER TABLE `proses_g`
 -- AUTO_INCREMENT for table `slider`
 --
 ALTER TABLE `slider`
-  MODIFY `id_slider` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=4;
+  MODIFY `id_slider` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=7;
 
 --
 -- AUTO_INCREMENT for table `user`
