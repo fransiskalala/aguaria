@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Mar 14, 2022 at 07:36 PM
+-- Generation Time: Mar 19, 2022 at 05:04 AM
 -- Server version: 10.4.22-MariaDB
 -- PHP Version: 7.4.27
 
@@ -206,7 +206,7 @@ CREATE TABLE `organisasi` (
 --
 
 INSERT INTO `organisasi` (`id_organisasi`, `judul_organisasi`, `isi_organisasi`, `foto_organisasi`) VALUES
-(1, 'Organisasi Aguaria', '<p>Lalalldskddja</p>\r\n', 'aspadin_logo.jpg');
+(1, 'Organisasi Aguaria', '<p>Aguaria bersama Aspadin bekerja sama untuk menciptakan lingkungan yang terjaga dengan melakukan berbagai kegiatan penanggulangan alam seperti penanaman bibit pohon di lereng Gunung Ungaran, Konservasi sumber mata air dan sebagainya.</p>\r\n', 'aspadin_logo.jpg');
 
 -- --------------------------------------------------------
 
@@ -283,13 +283,13 @@ CREATE TABLE `proses_g` (
 
 INSERT INTO `proses_g` (`id_prosesg`, `nama_prosesg`, `keterangan`, `foto_prosesg`) VALUES
 (3, 'Sumber Mata Air', '<p>Aguaria berasal dari sumber mata air pegunungan terpilih.</p>\r\n', 'Sumber.jpg'),
-(4, 'Proses Filtrasi dengan Unit VAF', '<p>Unit VAF (Valve and Filter) merupakan jenis penyaringan permanen yang berfungsi sebagai penyaring tahap awal.</p>\r\n', 'Valve1.jpg'),
+(4, 'Proses Filtrasi dengan Unit VAF', '<p>Unit VAF (Valve and Filter) merupakan jenis penyaringan permanen yang memiliki ukuran penyaringan sebesar 30-100 mikro yang berfungsi sebagai penyaring endapan padat.</p>\r\n', 'Valve1.jpg'),
 (5, 'Proses Ultra Violet', '<p>Merupakan proses desinfeksi atau sterilisasi air minum. Ultra Violet berfungsi untuk membunuh bakteri, virus dan bakteri.</p>\r\n', 'UV.png'),
-(6, 'Proses Filtrasi dengan Ultra Filtrasi', '<p>Proses ini berfungsi untuk menyaring microba dengan skala yang kecil. Sehingga akan dihasilkan air yang berkualitas.&nbsp;</p>\r\n', '2022-02-26_10_15_50_1.jpg'),
+(6, 'Proses Filtrasi dengan Ultra Filtrasi', '<p>Merupakan proses penyaringan menggunakan membran dengan ukuran pori sebesar 0.1 mikro yang berguna untuk menyaring partikel dan mikroba dengan skala yang kecil.</p>\r\n', '2022-02-26_10_15_50_1.jpg'),
 (7, 'Proses Mixing', '<p>Merupakan proses di mana terjadi pencampuran air minum dengan ozon. Sehingga air terasa lebih segar dan menyehatkan.</p>\r\n', '2022-02-26_10_21_49_1.jpg'),
-(8, 'Penampungan Air Terakhir', '<p>Proses ini berada pada Tangki Buffer yang berguna untuk menampung air yang siap untuk di konsumsi sebelum di masukan ke dalam galon.</p>\r\n', 'Buffer_Tank.jpg'),
-(9, 'Proses Pembersihan Galon Kosong', '<p>Sebelum di lakukan proses filling, galon di bersihkan dengan beberapa tahapan yaitu External Brusher, External Rinser, Prewash, Washer. Tahap External Brusher berguna untuk pembersihan kotoran pada galon bagian luar. Tahap External Rinser berguna untuk penghilangan sisa koding pada galon. Prewash berguna untuk memberikan bagian dalam dan luar dengan menggunakan desinfektan. Sedangkan tahap Washer berfungsi untuk pembersihan galon bagian dalam untuk memastikan bagian dalam galon bersih.</p>\r\n', 'Washer_Galon.png'),
-(10, 'Proses Filling Galon', '<p>Di tahap ini merupakan pengisian air minum ke dalam galon.</p>\r\n', 'Filling_Galon.png');
+(8, 'Tangki Buffer', '<p>Merupakan tempat penampungan air yang siap untuk dikonsumsi sebelum dimasukan ke dalam kemasan.</p>\r\n', 'Buffer_Tank.jpg'),
+(10, 'Proses Filling', '<p>Merupakan proses pengisian air minum ke dalam kemasan.</p>\r\n', 'Filling_Galon.png'),
+(11, 'Proses Coding', '<p>Merupakan proses pemberian kode produksi pada kemasan.</p>\r\n', 'Coding.png');
 
 -- --------------------------------------------------------
 
@@ -567,7 +567,7 @@ ALTER TABLE `proses`
 -- AUTO_INCREMENT for table `proses_g`
 --
 ALTER TABLE `proses_g`
-  MODIFY `id_prosesg` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=11;
+  MODIFY `id_prosesg` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=12;
 
 --
 -- AUTO_INCREMENT for table `slider`

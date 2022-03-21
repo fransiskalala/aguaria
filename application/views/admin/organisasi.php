@@ -8,7 +8,7 @@
                 <li class="breadcrumb-item active">Organisasi</li>
             </ol>
         </nav>
-    </div><!-- End Page Title -->
+    </div>
 
     <section class="section">
         <div class="row">
@@ -70,4 +70,4 @@
         </div>
     </section>
 
-</main><!-- End #main -->
+</main>
