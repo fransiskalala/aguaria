@@ -32,7 +32,7 @@ class Home extends CI_Controller
             'title' => "Company Profile Aguaria",
             // 'proses' => $this->m_home->proses(),
             'faq'   => $this->m_home->faq(),
-            'slider'    => $this->m_home->slider(),
+            'slider'    => $this->m_home->slider_home(),
             'isi' => 'home',
 
         );
@@ -44,6 +44,7 @@ class Home extends CI_Controller
         $data = array(
             'title' => "Company Profile Aguaria",
             'sejarah' => $this->m_sejarah->detail(),
+			'slider'  => $this->m_home->slider_sejarah(),
             'isi' => 'sejarah',
 
         );
@@ -54,6 +55,7 @@ class Home extends CI_Controller
         $data = array(
             'title' => "Company Profile Aguaria",
             'organisasi' => $this->m_organisasi->detail(),
+			'slider'  => $this->m_home->slider_organisasi(),
             'isi' => 'organisasi',
 
         );
@@ -66,6 +68,7 @@ class Home extends CI_Controller
             'title' => "Company Profile Aguaria",
             'proses' => $this->m_home->proses(),
             'prosesg' => $this->m_home->prosesg(),
+			'slider'  => $this->m_home->slider_organisasi(),
             'isi' => 'proses',
 
         );
@@ -77,6 +80,7 @@ class Home extends CI_Controller
         $data = array(
             'title' => "Company Profile Aguaria",
             'visi_misi' => $this->m_visimisi->detail(),
+			'slider'  => $this->m_home->slider_visimisi(),
             'isi' => 'visimisi',
 
         );
@@ -88,6 +92,7 @@ class Home extends CI_Controller
         $data = array(
             'title' => "Company Profile Aguaria",
             'tentang' => $this->m_home->tentang(),
+			'slider'  => $this->m_home->slider_tentang(),
             'isi' => 'tentang',
 
         );
@@ -99,6 +104,7 @@ class Home extends CI_Controller
         $data = array(
             'title' => "Company Profile Aguaria",
             'karir' => $this->m_home->karir(),
+			'slider'  => $this->m_home->slider_karir(),
             'isi' => 'karir',
 
         );
@@ -110,6 +116,7 @@ class Home extends CI_Controller
         $data = array(
             'title' => "Company Profile Aguaria",
             'informasi' => $this->m_informasi->detail(),
+			'slider'  => $this->m_home->slider_hubungi(),
             'isi' => 'hubungi_kami',
 
         );
@@ -121,6 +128,7 @@ class Home extends CI_Controller
         $data = array(
             'title' => "Company Profile Aguaria",
             'produk' => $this->m_home->produk(),
+			'slider'  => $this->m_home->slider_produk(),
             'isi' => 'produk',
 
         );
@@ -132,6 +140,7 @@ class Home extends CI_Controller
         $data = array(
             'title' => "Company Profile Aguaria",
             'galeri' => $this->m_home->galeri(),
+			'slider'  => $this->m_home->slider_galeri(),
             'isi' => 'galeri',
 
         );
@@ -144,6 +153,7 @@ class Home extends CI_Controller
             'title' => 'Company Profile Aguaria',
             'detail_galeri' => $this->m_home->detail_galeri($id_galeri),
             'caption_galeri' => $this->m_home->caption_galeri($id_galeri),
+			'slider'  => $this->m_home->slider_galeri(),
             'isi'   => 'galeri_detail'
         );
         $this->load->view('template/wrapper', $data, FALSE);
@@ -185,6 +195,7 @@ class Home extends CI_Controller
             'paginasi' => $this->pagination->create_links(),
             'latest_berita' => $this->m_home->latest_berita(),
             'berita'    => $this->m_home->berita($limit, $start),
+			'slider'  => $this->m_home->slider_berita(),
             'title' => 'Berita',
             'isi'   => 'berita',
         );
@@ -197,6 +208,7 @@ class Home extends CI_Controller
             'title' => 'Detail Berita',
             'latest_berita' => $this->m_home->latest_berita(),
             'berita' => $this->m_home->detail_berita($slug),
+			'slider'  => $this->m_home->slider_berita(),
             'isi'   => 'detail_berita'
         );
         $this->load->view('template/wrapper', $data, FALSE);

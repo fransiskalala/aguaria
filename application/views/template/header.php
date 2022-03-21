@@ -32,10 +32,10 @@
 	<link href="<?= base_url() ?>frontend/assets/css/gallery/compact-gallery.css" rel="stylesheet" />
 	<link href="<?= base_url() ?>frontend/assets/css/gallery/cards-gallery.css" rel="stylesheet" />
 	<link href="<?= base_url() ?>frontend/assets/fonts/stylesheet.css" rel="stylesheet">
-	<link rel="stylesheet" type="text/css" href="<?= base_url() ?>frontend/assets/css/mygallerybox/mygallery.css"/>
+	<link rel="stylesheet" type="text/css" href="<?= base_url() ?>frontend/assets/css/mygallerybox/mygallery.css" />
 
 	<script type="text/javascript" src="js/jquery-2.1.3.min.js"></script>
-<script type="text/javascript" src="js/mygallery.js"></script>
+	<script type="text/javascript" src="js/mygallery.js"></script>
 
 </head>
 
@@ -72,3 +72,44 @@
 			</nav>
 		</div>
 	</header>
+
+	<?php if ($this->uri->segment(1) != 'home') { ?>
+		<main id="main">
+			<section id="hero">
+				<div id="heroCarousel" data-bs-interval="5000" class="carousel slide carousel-fade" data-bs-ride="carousel">
+					<ol class="carousel-indicators" id="hero-carousel-indicators"></ol>
+					<div class="carousel-inner">
+						<?php $x = 0;
+						foreach ($slider as $key => $value) { ?>
+							<div <?= $x == 0 ? 'class="carousel-item active"' : 'class="carousel-item"' ?>>
+								<img src="<?= base_url('foto_slider/' . $value->foto_slider); ?>" class="d-block w-100">
+								<div class="carousel-caption d-none d-md-block">
+								</div>
+							</div>
+						<?php $x++;
+						} ?>
+					</div>
+					<a class="carousel-control-prev" href="#heroCarousel" role="button" data-bs-slide="prev">
+						<span class="carousel-control-prev-icon bi bi-chevron-left" aria-hidden="true"></span>
+					</a>
+					<a class="carousel-control-next" href="#heroCarousel" role="button" data-bs-slide="next">
+						<span class="carousel-control-next-icon bi bi-chevron-right" aria-hidden="true"></span>
+					</a>
+				</div>
+			</section>
+		</main>
+	<?php } elseif ($this->uri->segment(1) == 'home') { ?>
+		<main id="main">
+			<section id="banner">
+				<div class="carousel-inner">
+					<?php foreach ($slider as $key => $value) { ?>
+						<div class="carousel-item active">
+							<img src="<?= base_url('foto_slider/' . $value->foto_slider); ?>" class="d-block w-100">
+							<div class="carousel-caption d-none d-md-block">
+							</div>
+						</div>
+					<?php } ?>
+				</div>
+			</section>
+		</main>
+	<?php } ?>

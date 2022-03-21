@@ -35,6 +35,7 @@
                                     <th>No</th>
                                     <th>Nama Slider</th>
                                     <th>Foto Slider</th>
+									<th class="text-center">Menu Tempat Slider</th>
                                     <th>Action</th>
                                 </tr>
                             </thead>
@@ -45,10 +46,7 @@
                                         <td><?= $no++; ?></td>
                                         <td><?= $value->nama_slider ?></td>
                                         <td><img src="<?= base_url('foto_slider/' . $value->foto_slider) ?>" width="100px" height="100px"></td>
-
-
-
-
+										<td class="text-center"><?= $value->menu ?></td>
                                         <td class="text-center">
                                             <a href="<?= base_url('slider/edit/' . $value->id_slider) ?>" class="btn btn-outline-success">Edit</a>
                                             <a href="<?= base_url('slider/hapus/' . $value->id_slider) ?>" onclick="return confirm('Apakah data ini akan dihapus?')" class="btn btn-outline-danger">Hapus</a>
