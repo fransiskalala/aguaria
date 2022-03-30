@@ -75,14 +75,14 @@
 
 	<?php if ($this->uri->segment(1) != 'home') { ?>
 		<main id="main">
-			<section id="hero">
-				<div id="heroCarousel" data-bs-interval="5000" class="carousel slide carousel-fade" data-bs-ride="carousel">
+			<section id="hero" class="pb-0">
+				<div id="heroCarousel" data-bs-interval="3000" class="carousel slide carousel-fade" data-bs-ride="carousel">
 					<ol class="carousel-indicators" id="hero-carousel-indicators"></ol>
 					<div class="carousel-inner">
 						<?php $x = 0;
 						foreach ($slider as $key => $value) { ?>
 							<div <?= $x == 0 ? 'class="carousel-item active"' : 'class="carousel-item"' ?>>
-								<img src="<?= base_url('foto_slider/' . $value->foto_slider); ?>" class="d-block w-100">
+								<img src="<?= base_url('foto_slider/' . $value->foto_slider); ?>" class="pt-20 d-block w-100">
 								<div class="carousel-caption d-none d-md-block">
 								</div>
 							</div>
@@ -104,7 +104,7 @@
 				<div class="carousel-inner">
 					<?php foreach ($slider as $key => $value) { ?>
 						<div class="carousel-item active">
-							<img src="<?= base_url('foto_slider/' . $value->foto_slider); ?>" class="d-block w-100">
+							<img src="<?= base_url('foto_slider/' . $value->foto_slider); ?>" class="pt-20 d-block w-100">
 							<div class="carousel-caption d-none d-md-block">
 							</div>
 						</div>
