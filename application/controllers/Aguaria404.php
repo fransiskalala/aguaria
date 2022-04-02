@@ -16,7 +16,7 @@ class aguaria404 extends CI_Controller
             'title' => "Company Profile Aguaria",
             'isi' => 'aguaria404',
         );
-        $this->load->view('template/wrapper', $data, FALSE);
+        $this->load->view('template/wrapper404', $data, FALSE);
     }
 }
 

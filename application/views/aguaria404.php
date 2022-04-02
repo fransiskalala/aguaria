@@ -2,7 +2,6 @@
     <section class="pb-0">
 
         <head>
-            <title>Beautiful Not found 404 error page design for web UI with custom HTML and CSS</title>
             <meta charset="utf-8">
             <meta name="viewport" content="width=device-width, initial-scale=1">
             <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.10.2/css/all.css">
