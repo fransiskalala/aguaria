@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Mar 30, 2022 at 10:32 AM
+-- Generation Time: Apr 02, 2022 at 07:14 AM
 -- Server version: 10.4.22-MariaDB
 -- PHP Version: 7.4.27
 
@@ -330,12 +330,12 @@ CREATE TABLE `slider` (
 
 INSERT INTO `slider` (`id_slider`, `nama_slider`, `foto_slider`, `menu`) VALUES
 (2, 'Slider Home 1', 'Gunung_Header.jpg', 'Home'),
-(3, 'Slider Home 2', 'Header-semua-coba-coba.jpg', 'Home'),
-(4, 'Sejarah', 'HEADER-CREATE9.png', 'Sejarah'),
+(3, 'Slider Home 2', 'Header-Child1.jpg', 'Home'),
+(4, 'Sejarah', 'Header_water_blub1.png', 'Sejarah'),
 (5, 'Visi & Misi', 'HEADER-CREATE4.jpg', 'Visi & Misi'),
 (6, 'Berita', 'HEADER-CREATE7.jpg', 'Berita'),
 (7, 'TentangAguaria', 'HEADER-CREATE5.jpg', 'Tentang'),
-(8, 'Organisasi', 'HEADER-CREATE11.jpg', 'Organisasi'),
+(8, 'Organisasi', 'Header-semua-coba-coba.jpg', 'Organisasi'),
 (9, 'Proses Produksi', 'HEADER-CREATE101.jpg', 'Proses'),
 (10, 'Produk', 'HEADER-CREATE63.png', 'Produk'),
 (11, 'Galeri', 'HEADER-CREATE12.jpg', 'Galeri'),
