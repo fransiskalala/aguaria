@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Apr 02, 2022 at 07:14 AM
+-- Generation Time: Apr 05, 2022 at 09:47 AM
 -- Server version: 10.4.22-MariaDB
 -- PHP Version: 7.4.27
 
@@ -339,7 +339,7 @@ INSERT INTO `slider` (`id_slider`, `nama_slider`, `foto_slider`, `menu`) VALUES
 (9, 'Proses Produksi', 'HEADER-CREATE101.jpg', 'Proses'),
 (10, 'Produk', 'HEADER-CREATE63.png', 'Produk'),
 (11, 'Galeri', 'HEADER-CREATE12.jpg', 'Galeri'),
-(12, 'Karir', 'HEADER-CREATE13.jpg', 'Karir'),
+(12, 'Karir', 'Header_Gunung_2.png', 'Karir'),
 (13, 'Hubungi Kami', 'HEADER-CREATE8.jpg', 'Hubungi Kami');
 
 -- --------------------------------------------------------
