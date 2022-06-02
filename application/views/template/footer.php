@@ -1,34 +1,35 @@
   <!-- ======= Footer ======= -->
   <footer id="footer">
-  	<div class="footer-top">
-  		<div class="container">
-  			<div class="row">
-  				<div class="col col-lg-6 col-md-6">
-  					<div class="footer-info ">
-  						<div class="">
-  							<p> TEMUKAN KAMI DI </p>
-  						</div>
-  						<div class="social-links mt-3">
-  							<a href="#" class="twitter"><i class="bx bxl-twitter"></i></a>
-  							<a href="https://facebook.com/Realaguaria" class="facebook"><i class="bx bxl-facebook"></i></a>
-  							<a href="https://instagram.com/realaguaria" class="instagram"><i class="bx bxl-instagram"></i></a>
+    <div class="footer-top">
+      <div class="container">
+        <div class="row">
+          <div class="col col-lg-6 col-md-6">
+            <div class="footer-info ">
+              <div class="">
+                <p> TEMUKAN KAMI DI </p>
+              </div>
+              <div class="social-links mt-3">
+                <a href="#" class="twitter"><i class="bx bxl-twitter"></i></a>
+                <a href="https://facebook.com/Realaguaria" class="facebook"><i class="bx bxl-facebook"></i></a>
+                <a href="https://instagram.com/realaguaria" class="instagram"><i class="bx bxl-instagram"></i></a>
 
-  						</div>
-  					</div>
-  				</div>
-  				<div class="col col-lg-6 col-md-6">
-  					<div class="text-right">
-  						<a href="<?= base_url() ?>"><img src="<?php echo base_url(); ?>images/AGUARIA.png" width="190px" alt="logo aguaria" /></a>
-  					</div>
-  				</div>
-  			</div>
-  		</div>
-  	</div>
+              </div>
+            </div>
+          </div>
+          <div class="col col-lg-6 col-md-6">
+            <div class="text-right">
+              <a href="<?= base_url() ?>"><img src="<?php echo base_url(); ?>images/AGUARIA.png" width="190px" alt="logo aguaria" /></a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
 
 
   </footer>
 
-  <div class="floating_btn">
+  <!-- <div class="floating_btn"> -->
+  <div>
     <a class="floating_btn" target="_blank" href="https://wa.me/">
       <div class="contact_icon">
         <i class="fa fa-whatsapp my-float"></i>
@@ -36,7 +37,6 @@
     </a>
     <!-- <p class="text_icon">Ingin Memesan?</p> -->
   </div>
-
 
   <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
 
@@ -55,9 +55,9 @@
   <script src="<?= base_url() ?>frontend/assets/js/animate.js"></script>
   <script src="<?= base_url() ?>frontend/assets/js/gallery/baguetteBox.min.js"></script>
   <script>
-  	baguetteBox.run('.compact-gallery', {
-  		animation: 'slideIn'
-  	});
+    baguetteBox.run('.compact-gallery', {
+      animation: 'slideIn'
+    });
   </script>
   </body>
 

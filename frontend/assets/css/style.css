@@ -8,99 +8,51 @@ a {
     color: #d9232d;
 }
 
-.floating_btn {
-    position: fixed;
-    bottom: 30px;
-    right: 30px;
-    width: 100px;
-    height: 100px;
-    display: flex;
-    flex-direction: column;
-    align-items:center;
-    justify-content:center;
-    z-index: 1000;
-  }
-  
-  @keyframes pulsing {
-    to {
-      box-shadow: 0 0 0 30px rgba(232, 76, 61, 0);
-    }
-  }
-  
-  .contact_icon {
-    background-color: #42db87;
-    color: #fff;
-    width: 50px;
-    height: 50px;
-    font-size:30px;
-    border-radius: 40px;
+.button {
+    display: inline-block;
+    vertical-align: middle;
+    margin: 0 0 1rem;
+    border: 1px solid transparent;
+    border-radius: 3px;
+    -webkit-transition: background-color 0.25s ease-out, color 0.25s ease-out;
+    transition: background-color 0.25s ease-out, color 0.25s ease-out;
+    font-family: inherit;
+    -webkit-appearance: none;
+    line-height: 1;
     text-align: center;
-    box-shadow: 2px 2px 3px #999;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    transform: translatey(0px);
-    animation: pulse 1.5s infinite;
-    /* box-shadow: 0 0 0 0 #42db87;
-    -webkit-animation: pulsing 1.25s infinite cubic-bezier(0.66, 0, 0, 1);
-    -moz-animation: pulsing 1.25s infinite cubic-bezier(0.66, 0, 0, 1);
-    -ms-animation: pulsing 1.25s infinite cubic-bezier(0.66, 0, 0, 1);
-    animation: pulsing 1.25s infinite cubic-bezier(0.66, 0, 0, 1); */
-    font-weight: normal;
-    font-family: sans-serif;
-    text-decoration: none !important;
-    transition: all 300ms ease-in-out;
-  }
-  
-  
-  .text_icon {
-    margin-top: 8px;
-    color: #707070;
-    font-size: 13px;
-  }
-
-  .button {
-    display:inline-block;
-    vertical-align:middle;
-    margin:0 0 1rem;
-    border:1px solid transparent;
-    border-radius:3px;
-    -webkit-transition:background-color .25s ease-out,color .25s ease-out;
-    transition:background-color .25s ease-out,color .25s ease-out;
-    font-family:inherit;
-    -webkit-appearance:none;
-    line-height:1;
-    text-align:center;
-    cursor:pointer;
-    background-color:#6e7f91;
-    color:#fefefe;
-    font-family: 'Montserrat'; 
+    cursor: pointer;
+    background-color: #6e7f91;
+    color: #fefefe;
+    font-family: "Montserrat";
     font-weight: 500;
-    font-size: 1.2rem; 
+    font-size: 1.2rem;
     text-decoration: none;
     padding: 1em 3em;
-  }
-  
-  .button:hover, .button:focus {text-decoration: none;}
-  
-  .button-gradient {
-    border:0;
-    text-shadow:0 0 5px rgba(0,0,0,.25);
-    background:#46dc9e;
-    background-size:300% 100%;
-    -moz-transition:all .4s ease-in-out;
-    -o-transition:all .4s ease-in-out;
-    -webkit-transition:all .4s ease-in-out;
-    transition:all .4s ease-in-out;
-  }
-  
-  .button-gradient:hover {
-    background-position:100% 0;
-    -moz-transition:all .4s ease-in-out;
-    -o-transition:all .4s ease-in-out;
-    -webkit-transition:all .4s ease-in-out;
-    transition:all .4s ease-in-out;
-  }
+}
+
+.button:hover,
+.button:focus {
+    text-decoration: none;
+}
+
+.button-gradient {
+    border: 0;
+    text-shadow: 0 0 5px rgba(0, 0, 0, 0.25);
+    background: #46dc9e;
+    background-size: 300% 100%;
+    -moz-transition: all 0.4s ease-in-out;
+    -o-transition: all 0.4s ease-in-out;
+    -webkit-transition: all 0.4s ease-in-out;
+    transition: all 0.4s ease-in-out;
+}
+
+.button-gradient:hover {
+    background-position: 100% 0;
+    -moz-transition: all 0.4s ease-in-out;
+    -o-transition: all 0.4s ease-in-out;
+    -webkit-transition: all 0.4s ease-in-out;
+    transition: all 0.4s ease-in-out;
+}
 
 a:hover {
     color: #000000;
@@ -126,7 +78,7 @@ h6 {
     visibility: hidden;
     opacity: 0;
     right: 15px;
-    bottom: 15px;
+    bottom: 75px;
     z-index: 996;
     background: #0052cc;
     width: 40px;
@@ -2794,11 +2746,68 @@ ul {
 }
 
 .pt-20 {
-	padding-top: 20px;
+    padding-top: 20px;
 }
 
 .not-available {
-	color: gray;
+    color: gray;
 }
 
 
+/* WA.ME */
+
+a {
+    text-decoration: none;
+}
+
+.floating_btn {
+    position: fixed;
+    right: 10px;
+    bottom: 15px;
+    z-index: 1000;
+    height: 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+@keyframes pulsing {
+    to {
+        box-shadow: 0 0 0 30px rgba(232, 76, 61, 0);
+    }
+}
+
+.contact_icon {
+    background-color: #42db87;
+    color: #fff;
+    width: 50px;
+    height: 50px;
+    font-size: 23px;
+    border-radius: 50px;
+    text-align: center;
+    box-shadow: 2px 2px 3px #999;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transform: translatey(0px);
+    box-shadow: 0 0 0 0 #42db87;
+    font-weight: normal;
+    font-family: sans-serif;
+    text-decoration: none !important;
+    transition: all 300ms ease-in-out;
+    /* animation: pulse 1.5s infinite;
+    -webkit-animation: pulsing 1.25s infinite cubic-bezier(0.66, 0, 0, 1);
+    -moz-animation: pulsing 1.25s infinite cubic-bezier(0.66, 0, 0, 1);
+    -ms-animation: pulsing 1.25s infinite cubic-bezier(0.66, 0, 0, 1);
+    animation: pulsing 1.25s infinite cubic-bezier(0.66, 0, 0, 1); */
+}
+
+.text_icon {
+    margin-top: 8px;
+    color: #707070;
+    font-size: 13px;
+}
+
+
+/* WA.ME */
