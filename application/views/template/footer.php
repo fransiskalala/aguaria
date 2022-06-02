@@ -28,6 +28,16 @@
 
   </footer>
 
+  <div class="floating_btn">
+    <a class="floating_btn" target="_blank" href="https://wa.me/">
+      <div class="contact_icon">
+        <i class="fa fa-whatsapp my-float"></i>
+      </div>
+    </a>
+    <!-- <p class="text_icon">Ingin Memesan?</p> -->
+  </div>
+
+
   <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
 
 

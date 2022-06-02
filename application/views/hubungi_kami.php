@@ -37,7 +37,11 @@
 					<div class="section-title">
 						<p>Informasi Pemesanan</p>
 					</div>
-					<form action="<?= site_url('home/add_feedback') ?>" method="post">
+					<div class="">
+						<p>Infomasi Pemesanan dapat langsung melalui via Whatsapp yang tertera dibawah ini :</p)
+						
+					</div>
+					<!-- <form action="<?= site_url('home/add_feedback') ?>" method="post">
 						<div class="row">
 							<div class="form-group mt-3">
 								<input type="text" name="nama" class="form-control" id="nama" placeholder="Nama Anda" value="<?= set_value('nama'); ?>" required>
@@ -57,7 +61,7 @@
 						</div>
 						<br>
 						<div class="text-center pb-5"><button class="btn btn-primary" type="submit">Send Message</button></div>
-					</form>
+					</form> -->
 				</div>
 			</div>
 		</div>
