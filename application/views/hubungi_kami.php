@@ -38,8 +38,14 @@
 						<p>Informasi Pemesanan</p>
 					</div>
 					<div class="">
-						<p>Infomasi Pemesanan dapat langsung melalui via Whatsapp yang tertera dibawah ini :</p)
-						
+						<p>Informasi Pemesanan dapat langsung melalui via Whatsapp yang tertera dibawah ini :</p>
+						</br>
+						<a href="#" class="button button-gradient">Whatsapp</a>
+						</br>
+						</br>
+
+						<p>Informasi Pemesanan juga dapat dilakukan dengan menghubungi email kami yang tertera dibawah ini :</p>
+						<h4>marketing@aguaria.co.id</h4>
 					</div>
 					<!-- <form action="<?= site_url('home/add_feedback') ?>" method="post">
 						<div class="row">

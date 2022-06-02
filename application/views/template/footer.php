@@ -11,7 +11,7 @@
   						<div class="social-links mt-3">
   							<a href="#" class="twitter"><i class="bx bxl-twitter"></i></a>
   							<a href="https://facebook.com/Realaguaria" class="facebook"><i class="bx bxl-facebook"></i></a>
-  							<a href="https://facebook.com/Realaguaria" class="instagram"><i class="bx bxl-instagram"></i></a>
+  							<a href="https://instagram.com/realaguaria" class="instagram"><i class="bx bxl-instagram"></i></a>
 
   						</div>
   					</div>
