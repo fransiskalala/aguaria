@@ -35,7 +35,7 @@
 				</div>
 				<div class="col col-md col-lg">
 					<div class="section-title">
-						<p>Form Kontak</p>
+						<p>Informasi Pemesanan</p>
 					</div>
 					<form action="<?= site_url('home/add_feedback') ?>" method="post">
 						<div class="row">
