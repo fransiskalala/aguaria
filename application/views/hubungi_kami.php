@@ -61,8 +61,8 @@
 				</div>
 			</div>
 		</div>
-		<div class="col-md-12">
+		<!-- <div class="col-md-12">
 			<iframe style="border:0; width: 100%; height: 400px;" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d989.7740212454872!2d110.3934039822465!3d-7.114863105705905!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e7088eb82283931%3A0x2b3ff2de4eddf753!2sJl.%20BIma%20Raya%2C%20Mapagan%2C%20Lerep%2C%20Kec.%20Ungaran%20Bar.%2C%20Kabupaten%20Semarang%2C%20Jawa%20Tengah%2050519!5e0!3m2!1sid!2sid!4v1645753910128!5m2!1sid!2sid" frameborder="0" allowfullscreen></iframe>
-		</div>
-	</section><!-- End Contact Section -->
+		</div> -->
+	</section>
 </main>
