@@ -16,7 +16,7 @@
 								<p class="card-text text-muted mb-0 underline">No. Telepon</p>
 								<p class="card-text"><?= $informasi->no_telepon_perusahaan ?></p>
 								<p class="card-text text-muted mb-0 underline">Email</p>
-								<a href="https://mail.google.com/mail/?view=cm&fs=1&to=<?= $informasi->email_perusahaan ?>" class="text-email" target="_blank" class="card-link"><?= $informasi->email_perusahaan ?></a>
+								<u><a href="https://mail.google.com/mail/?view=cm&fs=1&to=<?= $informasi->email_perusahaan ?>" class="text-email" target="_blank" class="card-link"><?= $informasi->email_perusahaan ?></a></u>
 								<!-- <p class="card-text text-muted mb-0 mt-3 underline">Cabang Perusahaan</p>
                   <div class="btn-group pt-1">
                     <button type="button" class="btn btn-secondary dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
@@ -37,11 +37,9 @@
 					<div class="section-title">
 						<p>Informasi Pemesanan</p>
 					</div>
-					<div class="">
-						</br>
+					<div class="informasi-container">
 						<p>Informasi Pemesanan dapat langsung melalui via Whatsapp dengan mengeklik tombol dibawah ini:</p>
 						<a href="https://wa.me/6282138191496?text=Saya%20ingin%20membeli%20produk%20Aguaria" class="button button-gradient" target="_blank">Whatsapp</a>
-						</br>
 						<p>Informasi Pemesanan juga dapat dilakukan dengan menghubungi email kami yang tertera dibawah ini:</p>
 						<u>realaguaria@gmail.com</u>
 					</div>

@@ -8,10 +8,15 @@ a {
     color: #d9232d;
 }
 
+.informasi-container {
+    margin-top: 10rem;
+    text-align: center;
+}
+
 .button {
     display: inline-block;
     vertical-align: middle;
-    margin: 0 10rem 1rem;
+    margin: 0 0 1rem;
     border: 1px solid transparent;
     border-radius: 3px;
     -webkit-transition: background-color 0.25s ease-out, color 0.25s ease-out;
