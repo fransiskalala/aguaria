@@ -24,7 +24,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 |
 */
 date_default_timezone_set('Asia/Jakarta');
-$config['base_url'] = '203.175.8.124';
+$config['base_url'] = 'https://www.aguaria.co.id/';
 
 /*
 |--------------------------------------------------------------------------
