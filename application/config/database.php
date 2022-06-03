@@ -75,7 +75,7 @@ $query_builder = TRUE;
 
 $db['default'] = array(
 	'dsn'	=> '',
-	'hostname' => 'cardamom.aguaria.co.id',
+	'hostname' => 'localhost',
 	'username' => 'root',
 	'password' => '',
 	'database' => 'aguf4268_aguaria',
