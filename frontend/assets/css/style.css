@@ -11,7 +11,7 @@ a {
 .button {
     display: inline-block;
     vertical-align: middle;
-    margin: 0 0 1rem;
+    margin: 0 10rem 1rem;
     border: 1px solid transparent;
     border-radius: 3px;
     -webkit-transition: background-color 0.25s ease-out, color 0.25s ease-out;
