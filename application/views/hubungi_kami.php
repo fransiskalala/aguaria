@@ -37,9 +37,11 @@
 					<div class="section-title">
 						<p>Informasi Pemesanan</p>
 					</div>
-					<div class="informasi-container">
+					<div class="informasi-pemesanan-container">
 						<p>Informasi Pemesanan dapat langsung melalui via Whatsapp dengan mengeklik tombol dibawah ini:</p>
-						<a href="https://wa.me/6282138191496?text=Saya%20ingin%20membeli%20produk%20Aguaria" class="button button-gradient" target="_blank">Whatsapp</a>
+						<div class="wa-me-container">
+							<a href="https://wa.me/6282138191496?text=Saya%20ingin%20membeli%20produk%20Aguaria" class="button button-gradient" target="_blank">Whatsapp</a>
+						</div>
 						<p>Informasi Pemesanan juga dapat dilakukan dengan menghubungi email kami yang tertera dibawah ini:</p>
 						<u>realaguaria@gmail.com</u>
 					</div>

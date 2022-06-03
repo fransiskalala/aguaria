@@ -8,8 +8,11 @@ a {
     color: #d9232d;
 }
 
-.informasi-container {
-    margin-top: 10rem;
+.informasi-pemesanan-container {
+    margin-top: 1rem;
+}
+
+.wa-me-container {
     text-align: center;
 }
 
