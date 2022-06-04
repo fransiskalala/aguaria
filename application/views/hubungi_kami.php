@@ -42,7 +42,7 @@
 						<div class="wa-me-container">
 							<a href="https://wa.me/6282138191496?text=Saya%20ingin%20membeli%20produk%20Aguaria" class="button button-gradient" target="_blank">Whatsapp</a>
 						</div>
-						<p>Informasi Pemesanan juga dapat dilakukan dengan menghubungi email kami yang tertera dibawah ini:</p>
+						<p>Atau dapat menghubungi email kami yang tertera dibawah ini:</p>
 						<u>realaguaria@gmail.com</u>
 					</div>
 					<!-- <form action="<?= site_url('home/add_feedback') ?>" method="post">
