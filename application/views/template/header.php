@@ -6,8 +6,8 @@
 	<meta content="width=device-width, initial-scale=1.0" name="viewport">
 
 	<title>Aguaria</title>
-	<meta content="" name="description">
-	<meta content="" name="keywords">
+	<meta name="google-site-verification" content="ZMFy7mWuXejkKaPiR0DxS5CkE8dipYlKcDiGAkILEew" />
+
 
 
 	<link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
