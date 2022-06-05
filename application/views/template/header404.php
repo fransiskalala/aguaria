@@ -6,12 +6,11 @@
 	<meta content="width=device-width, initial-scale=1.0" name="viewport">
 
 	<title>Aguaria</title>
-	<meta content="" name="description">
-	<meta content="" name="keywords">
+	<meta name="google-site-verification" content="c3TFRy3nuirSm4OMimEjX_1f4ukqzp1phav0kpU6Jng" />
 
 
 	<link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
-
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
 
 	<link href="<?= base_url() ?>frontend/assets/vendor/animate.css/animate.min.css" rel="stylesheet">
 	<link href="<?= base_url() ?>frontend/assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
@@ -25,7 +24,6 @@
 
 	<link href="<?= base_url() ?>frontend/assets/css/style.css" rel="stylesheet">
 	<link href="<?= base_url() ?>frontend/assets/css/carousel.css" rel="stylesheet">
-	<link href="https://netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.css" rel="stylesheet">
 	<link href="<?= base_url() ?>frontend/assets/css/faq/faq.css" rel="stylesheet">
 	<link href="<?= base_url() ?>frontend/assets/css/animate.css" rel="stylesheet">
 	<link href="<?= base_url() ?>frontend/assets/css/gallery/baguetteBox.min.css" rel="stylesheet" />

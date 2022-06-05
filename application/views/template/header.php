@@ -24,7 +24,6 @@
 
 	<link href="<?= base_url() ?>frontend/assets/css/style.css" rel="stylesheet">
 	<link href="<?= base_url() ?>frontend/assets/css/carousel.css" rel="stylesheet">
-	<link href="https://netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.css" rel="stylesheet">
 	<link href="<?= base_url() ?>frontend/assets/css/faq/faq.css" rel="stylesheet">
 	<link href="<?= base_url() ?>frontend/assets/css/animate.css" rel="stylesheet">
 	<link href="<?= base_url() ?>frontend/assets/css/gallery/baguetteBox.min.css" rel="stylesheet" />
