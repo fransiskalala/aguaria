@@ -30,7 +30,7 @@
 
   <!-- <div class="floating_btn"> -->
   <div>
-    <a class="floating_btn" target="_blank" href="https://wa.me/6282138191496?text=Saya%20ingin%20membeli%20produk%20Aguaria">
+    <a class="floating_btn" target="_blank" href="https://wa.me/6281212315770?text=Saya%20ingin%20membeli%20produk%20Aguaria">
       <div class="contact_icon">
         <i class="fa fa-whatsapp my-float"></i>
       </div>
